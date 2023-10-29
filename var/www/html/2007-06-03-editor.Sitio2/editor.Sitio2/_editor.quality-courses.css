@@ -1,0 +1,46 @@
+.btnToolbar {
+	padding:3px; 
+	font-family: Arial,Sans Serif; 
+	font-size: 8pt; 
+	color: #FFFF00; 
+	font-weight: bold;
+	text-decoration:none; 
+	background-color:#CC9900
+}
+
+.btnToolbarSALIR {
+	padding:3px; 
+	font-family: Arial,Sans Serif; 
+	font-size: 8pt; 
+	color: #FFFF00; 
+	font-weight: bold;
+	text-decoration:none; 
+	background-color:#FF0000;
+	border: 1px solid #FFFF00;
+}
+
+.seccionTitulo	{	
+	font-family: Arial,Sans Serif;
+	font-size: 12pt;
+	}
+
+.tablaTitulo	{	
+	font-family: Arial,Sans Serif;
+	font-size: 8pt;
+	font-weight: bold; 	
+	border-bottom:1px dotted #C0C0C0; 
+	color:#FFFFFF; 
+	text-align:left; 
+	background-color:#000000;
+	padding: 2px;
+}
+
+.tablaRegistro	{
+	font-family: Arial,Sans Serif;
+	font-size: 8pt;
+	font-weight: normal; 
+	border-bottom:1px dotted #C0C0C0; 
+	color: #000000; 
+	text-align: left; 
+	background-color: #FFFFFF 
+}

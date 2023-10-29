@@ -1,0 +1,12 @@
+AddDefaultCharset iso-8859-1	
+<IfModule mod_rewrite.c>
+#RewriteEngine On
+## Si hay request de un archivo o directorio que si existe	
+#RewriteCond %{REQUEST_FILENAME} -f [OR]
+#RewriteCond %{REQUEST_FILENAME} -d
+#RewriteRule ^(.+) - [PT,L]
+##Rewritebase 
+#
+##Primera regla -y en teoria debería ser la única-
+#RewriteRule ^(.+) index.php?pagina=$1 [QSA,L]
+</IfModule>
