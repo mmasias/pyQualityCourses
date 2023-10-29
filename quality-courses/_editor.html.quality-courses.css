@@ -1,0 +1,73 @@
+/* CSS Document */
+
+P.upperText {
+	FONT-SIZE: 10px; 
+	MARGIN-BOTTOM: 15px; 
+	COLOR: #000000; 
+	FONT-STYLE: italic; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	TEXT-ALIGN: center;
+}
+
+TABLE.contenido {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+TABLE.contenido TD.contenidoEncabezado {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 16px; 
+	COLOR: #ffffff; 
+	BACKGROUND-COLOR: #ff6600; 
+	TEXT-ALIGN: left;
+}
+
+TABLE.contenido TD {
+	FONT-SIZE: 10px; 
+	COLOR: #000000; 
+	TEXT-ALIGN: justify;
+}
+
+TABLE.pricesTable {
+
+	BORDER-RIGHT: #000000 0px solid; 
+	BORDER-TOP: #000000 0px solid; 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 10px; 
+	BORDER-LEFT: #000000 0px solid; 
+	BORDER-BOTTOM: #000000 0px solid; 
+	BACKGROUND-COLOR: #ffffff; 
+	TEXT-ALIGN: center;
+
+}
+
+TABLE.pricesTable TD.encabezado {
+
+	BORDER-WIDTH: 1px; 
+	BORDER-COLOR: #ff6600; 
+	BACKGROUND-COLOR: #ff6600;
+	COLOR: #FFFFFF; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+
+}
+
+TABLE.pricesTable TD.prim {
+
+	BORDER-RIGHT: 0px; 
+	BORDER-TOP: 0px; 
+	BORDER-LEFT: 0px; 
+	COLOR: #996666; 
+	BORDER-BOTTOM: 0px; 
+	BACKGROUND-COLOR:#feb712;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+
+}
+
+TABLE.pricesTable TD {
+
+	BORDER-RIGHT: #ff9900 1px solid; 
+	BORDER-TOP: #ff9900 1px solid; 
+	BORDER-LEFT: #ff9900 1px solid; 
+	COLOR: #996666; 
+	BORDER-BOTTOM: #ff9900 1px solid
+
+	}

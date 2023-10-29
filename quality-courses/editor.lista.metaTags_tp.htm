@@ -1,0 +1,97 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Editor Maestro de MetaTags</title>
+<link rel="stylesheet" type="text/css" href="_editor.quality-courses.css">
+<style>
+.miniTexto {
+	font-family:Arial; 
+	font-size:8pt;
+	border:1px solid #808080
+	}
+.celdaEditor{
+	font-family:Arial; 
+	font-size:8pt; 
+	border-bottom: 1px dotted #C0C0C0;
+}
+
+.celdaEditor2{
+	font-family:Arial; 
+	font-size:8pt; 
+	border-bottom: 1px dotted #C0C0C0;
+	background-color:#DDDDDD;	
+}
+
+.encabezadoEditor{
+	font-family:Arial; 
+	font-size:8pt; 
+	color:#FFFFFF; 
+	font-weight:bold; 
+	background-color:#FF9933;
+}
+</style>
+</head>
+
+<body>
+
+<div align="center">
+<table border="0" width="100%" id="table2" bgcolor="#FF9933" cellspacing="0" cellpadding="3">
+	<tr>
+						<td align="left"><font color="#FFFFFF" face="Arial"><b>Editor de 
+						elementos meta generales</b></font></td>
+						<td align="left">&nbsp;</td>
+						<td align="right"><a class='btnToolbar' href='editor.FrontPage.php'>
+						<font face="Arial">Volver</font></a></td>
+					</tr>
+</table>
+<hr color="#FF9933" size="1">
+<table border="0" id="table1" cellspacing="0" cellpadding="3">
+	<tr>
+		<td align="center" class="encabezadoEditor">Visible</td>
+		<td align="center" class="encabezadoEditor">metaTag</td>
+		<td align="center" class="encabezadoEditor">descriptor</td>
+		<td align="center" class="encabezadoEditor">Valor por defecto</td>
+		<td style="font-family: Arial; font-size: 8pt; color: #FFFFFF; font-weight: bold; background-color: #FF9933">&nbsp;</td>
+	</tr>
+	<!-- START BLOCK : elementoMeta -->
+	<form method="post" action="editor.lista.metaTags_graba.php" xaction="sampleposteddata.php">
+		<tr>
+			<td align="center" class="celdaEditor">
+			<input class="miniTexto" type="hidden" xtype="text" name="txtId" size="2" value='{txtId}'>
+			<input type="checkbox" name="optVisible" value="1" {optVisible}></td>
+			<td align="center" class="celdaEditor">
+			META
+					<input class="miniTexto" type="text" name="txtNombre" size="35" value='{txtNombre}'></td>
+			<td align="right" class="celdaEditor">
+			<input class="miniTexto" type="text" name="txtDescriptor" size="10" value='{txtDescriptor}'></td>
+			<td align="left" class="celdaEditor">
+			= &quot;<input class="miniTexto" type="text" name="txtValorGenerico" size="75" value='{txtValorGenerico}'>&quot;</td>
+			<td align="center" class="celdaEditor">
+			<input type="submit" value="Actualiza" name="btnGraba"></td>
+		</tr>
+	</form>		
+	<!-- END BLOCK : elementoMeta --> 
+	<tr>
+		<td colspan="5" align="center" style="font-family: Arial; font-size: 8pt">
+		<hr color="#FF9933" size="1"></td>
+	</tr>
+	<form method="post" action="editor.lista.metaTags_graba.php" xaction="sampleposteddata.php">
+		<tr>
+			<td align="center" class="celdaEditor2">&nbsp;</td>
+			<td align="center" class="celdaEditor2">META
+			<input class="miniTexto" type="text" name="txtNombre" size="35"></td>
+			<td align="right" class="celdaEditor2">
+			<input class="miniTexto" type="text" name="txtDescriptor" size="10"></td>
+			<td align="left" class="celdaEditor2">= &quot;<input class="miniTexto" type="text" name="txtValorGenerico" size="75">&quot;</td>
+			<td align="center" class="celdaEditor2">
+			<input type="submit" value="Agrega" name="btnGraba"></td>
+		</tr>
+	</form>
+</table>
+
+</div>
+</body>
+
+</html>

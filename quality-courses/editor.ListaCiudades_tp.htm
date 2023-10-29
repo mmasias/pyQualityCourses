@@ -1,0 +1,36 @@
+<meta http-equiv="Content-type" content='text/html; charset="ISO-8859-1"' />
+<html>
+<head>
+	<title>editor Ciudades</title>
+	
+	<script src="./orden.dll.js" type="text/javascript"></script>
+	<script src="./orden.funciones.Ciudad.js" type="text/javascript"></script>
+	<script src="./orden.funciones.js" type="text/javascript"></script>	
+	
+	<script language="JavaScript">
+		var elementos = new Array();
+		<!-- START BLOCK : listaCiudades -->
+		elementos[{orden}]="{ciudad}<input type='hidden' name='{ciudad}' value='{id}' />";
+		<!-- END BLOCK : listaCiudades -->
+	</script>
+	<link rel="stylesheet" type="text/css" href="_editor.quality-courses.css">
+</head>
+
+<body onLoad="imprime_listado()" topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
+<table width="100%">
+<tr><td valign="center">	
+	<form method="POST" action="editor.Ciudades._Graba.php">
+		&nbsp;<img border="0" src="image/ico_nuevo.png" hspace="5">Ciudad <input type="text" name="txtNombreCiudad" size="17">
+		<input type="submit" value="Agregar">
+	</form>
+</td></tr>
+<tr><td align="center" valign="center">	
+	<form method="POST" action="editor.Ciudades._Eliminar.php">
+		<div id="listado_elementos">
+		</div>
+		<p><input type="submit" value="Actualizar orden" /></p>
+	</form>
+</td></tr>
+</table>
+</body>
+</html>

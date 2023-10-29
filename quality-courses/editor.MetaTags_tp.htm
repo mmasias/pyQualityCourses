@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Editor de elementos META para</title>
+</head>
+
+<body>
+<form action="editor.MetaTags._Graba.php" xaction="/sampleposteddata.php" method="POST">
+<div align="center">
+<table border="0" id="table1" cellspacing="0" cellpadding="3">
+	<tr>
+		<td colspan="2" align="center" bgcolor="#C0C0C0">
+		<table border="0" width="100%" id="table2" cellspacing="0" cellpadding="2">
+			<tr>
+				<td align="center" width="100%"><font size="1" face="Verdana">&nbsp;Editor 
+				de elementos META<br>
+			<b>IMPORTANTE: </b>No olvide <b>grabar primero</b> 
+			los datos del elemento padre.</font></td>
+				<td><font size="1" face="Verdana"><input type="submit" value="Grabar elementos META" name="btnGrabar"></font></td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<!-- START BLOCK : listaElementosMeta -->
+	<tr>
+		<td valign="middle"><font face="Arial" size="2">{nombreMeta}</font></td>
+		<td valign="middle"><font face="Arial"><font size="2">{descriptor} =&quot;</font><input type="text" name="{idMeta}" size="71" value="{valorMeta}" autocomplete="off"><font size="2">&quot;</font></font></td>
+	</tr>
+	<!-- END BLOCK : listaElementosMeta -->	
+	<tr>
+		<td colspan="2" align="center">
+			<input type="hidden" xtype="text" name="txtTabla" value="{tabla}">
+			<input type="hidden" xtype="text" size="40" name="txtCriterio" value="{criterio}">
+			<hr noshade color="#000000" size="1">
+		</td>
+	</tr>
+	</table>
+</div>
+</form>
+</body>
+
+</html>

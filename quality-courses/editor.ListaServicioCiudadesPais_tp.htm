@@ -1,0 +1,49 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Pagina nueva 1</title>
+<link rel="stylesheet" type="text/css" href="_editor.quality-courses.css">
+</head>
+
+<body>
+
+	<div align="center">
+
+	<table border="0" cellspacing="0" cellpadding="3" width="85%">
+		<tr>
+			<td colspan="4" class="seccionTitulo">
+			<table border="0" width="100%" cellspacing="0" cellpadding="2">
+				<tr>
+					<td><font face="Tahoma" size="2">Detalle de la definición de</font></td>
+					<td><font face="Tahoma" size="2"><b>{txtNombreServicio}</b></font></td>
+				</tr>
+				<tr>
+					<td><font face="Tahoma" size="2">para las ciudades de </font>
+					</td>
+					<td><font face="Tahoma" size="2"> <b>{txtNombrePais}</b></font></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="tablaTitulo" width="30%">Ciudad</td>
+			<td class="tablaTitulo" style="text-align: center" width="70%">Definido</td>
+		</tr>
+		<!-- START BLOCK : listaServiciosCiudadesPais -->
+		<tr>
+			<td class="tablaRegistro" width="30%">{ciudadNombre}</td>
+			<td class="tablaRegistro" style="text-align: center" width="70%">
+				<a target="_top" href='editor.ServicioCiudadPais.php?idServicio={ciudadIdServicio}&idCiudad={ciudadIdCiudad}&idPais={ciudadIdPais}'>
+					{txtDefinir}
+				</a>
+			</td>
+		</tr>
+		<!-- END BLOCK : listaServiciosCiudadesPais -->
+	</table>
+
+	</div>
+
+</body>
+
+</html>

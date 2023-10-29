@@ -1,0 +1,210 @@
+<html>
+<head>
+	<title>Proyecto Quality-Courses - Prototipo de editor</title>
+  <script type="text/javascript" src="/FCKeditor/fckeditor.js"></script>
+  <script type="text/javascript">
+  <!--
+	
+	
+  function verEditor(id){  
+	  inicializaEditores();
+     var obj = document.getElementById('editor_' + id)
+     if(obj.style.display == 'block') obj.style.display = 'none'
+     else obj.style.display = 'block';
+		 
+		if (id>2){
+			if (navigator.appName!="Microsoft Internet Explorer"){
+				arregla('html_superior1');
+				arregla('html_menu');
+				arregla('html_inferior');
+			}
+		}
+  }
+
+	function arregla(elemento){
+		var oEditor = FCKeditorAPI.GetInstance(elemento);
+		oEditor.Commands.GetCommand('Source').Execute();
+		oEditor.Commands.GetCommand('Source').Execute();
+	}
+	
+  function inicializaEditores(){
+  	editores=document.getElementsByTagName('div');
+  	numContenedores = editores.length;
+		for(m=0; m < numContenedores; m++){
+       if(editores[m].id.indexOf('editor_') == 0)
+       editores[m].style.display = 'none'
+    }  	
+  }  
+  
+    function ReplaceAllTextareas() {
+          // replace all of the textareas
+          var allTextAreas = document.getElementsByTagName("textarea");
+          for (var i=0; i < allTextAreas.length; i++) {
+          var oFCKeditor = new FCKeditor( allTextAreas[i].name ) ;
+						//alert(allTextAreas[i].name);
+	          oFCKeditor.BasePath = "/FCKeditor/" ;
+						oFCKeditor.Width=800;
+						oFCKeditor.Height=450;
+						oFCKeditor.ToolbarSet = 'qualityCourses';
+	          oFCKeditor.ReplaceTextarea();
+          }
+		var objEspere=document.getElementsByTagName('span');
+		objEspere[0].style.display='none';
+  }
+
+
+  // -->
+  </script>	
+  
+	<link rel="stylesheet" type="text/css" href="_editor.quality-courses.css">
+  
+</head>
+<body onLoad="javascript: ReplaceAllTextareas(); inicializaEditores(); verEditor(1)">
+	<form action="editor.FrontPage._Graba.php" method="post">
+
+				<table border="0" width="100%" cellspacing="0" cellpadding="2" bgcolor="#FF9900">
+					<tr>
+						<td align="center"><font color="#FFFFFF"><b>Quality 
+						Courses / Editor</b></font></td>
+						<td align="center"><a class='btnToolbar' href='#' onclick='javascript:verEditor(1)'>Elementos generales</a></td>
+						<td align="center"><a class='btnToolbar' href='#' onclick='javascript:verEditor(2)'>Ciudades/Paises/Secciones</a></td>
+						<td align="center"><a class='btnToolbar' href='#' onclick='javascript:verEditor(3)'>HTML Superior</a></td>
+						<td align="center"><a class='btnToolbar' href='#' onclick='javascript:verEditor(4)'>HTML Menu</a></td>
+						<td align="center"><a class='btnToolbar' href='#' onclick='javascript:verEditor(5)'>HTML Inferior</a></td>
+						<td align="center"><input type="submit" value="Graba"></td>
+					</tr>
+					<tr>
+						<td align="center" colspan="7" bgcolor="#FFFF99">
+							<span id="Espere">
+							<hr noshade color="#FFFFFF" width="75%" size="1" />
+							<p>Por favor espere...</p>
+							<hr noshade color="#FFFFFF" width="75%" size="1" />
+							</span>
+						</td>
+					</tr>
+				</table>
+
+	<div id="editor_1" align="center" style="display: none;">
+	<table border="0" width="100%" cellspacing="0" cellpadding="0">
+		<tr>
+			<td><hr noshade size="1"></td>
+		</tr>
+		<tr>
+			<td align="center">
+	<table border="0" cellpadding="2" cellspacing="0">
+		<tbody>
+			<tr>
+				<td class="tablaTitulo" align="left"><b><font size="2">Sitio web</font></b></td>
+				<td class="tablaRegistro" align="left">&nbsp;</td>
+				<td class="tablaRegistro" align="center"><input name="txtSitioWeb" value="{txtSitioWeb}" size="56" type="text" readonly></td>
+				<td class="tablaRegistro" align="left">&nbsp;</td>
+		</tr>
+			<tr>
+				<td align="center" colspan="4">&nbsp;</td>
+		</tr>
+			<tr>
+				<td align="center" colspan="4">
+				<a href="editor.lista.metaTags.php">Editor de metaTags genéricos</a></td>
+				</tr>
+			<tr>
+				<td colspan="4">&nbsp;</td>
+				</tr>
+			<tr>
+				<td colspan="4">
+				<p align="center"><font size="6" color="#FF0000">
+				<span style="background-color: #FFFF00"><!-- SERVIDOR EN 
+				MANTENIMIENTO - NO ACCEDER --></span></font></td>
+				</tr>
+			<tr>
+				<td colspan="4">&nbsp;</td>
+				</tr>
+	</tbody></table>	
+	
+			</td>
+		</tr>
+	</table>
+	</div>		
+		<div id="editor_2" align="center" style="display: none;">
+				<table border="0" width="100%" cellspacing="0" cellpadding="0">
+					<tr>
+						<td><hr noshade size="1"></td>
+					</tr>
+					<tr>
+						<td align="center">
+				<table border="0">
+					<tr>
+						<td><iframe src="editor.ListaPaises.php" height="430" width="320" name="frmPaises" marginwidth="5" marginheight="5" border="0" frameborder="0" style="border: 1px solid #000000"></iframe></td>
+						<td><iframe src="editor.ListaCiudades.php" height="430" width="320" name="frmCiudades" marginwidth="5" marginheight="5" border="0" frameborder="0" style="border: 1px solid #000000"></iframe></td>
+						<td><iframe src="editor.ListaServicios.php" height="430" width="320" name="frmServicios" marginwidth="5" marginheight="5" border="0" frameborder="0" style="border: 1px solid #000000"></iframe></td>
+					</tr>
+				</table>
+<!--				<table width="900">
+					<tbody><tr>
+						<td colspan="2" align="left" valign="top" width="445">
+							Lista de 
+							<a href="editor.ListaCiudades.php" target="frmLocacion">
+							ciudades
+							</a> / 
+							<a href="editor.ListaPaises.php" target="frmLocacion">
+							paises
+							</a> definidos</td>
+						<td colspan="2" align="right" valign="top" width="445">
+							Lista de secciones definidas</td>
+					</tr>
+					<tr>
+						<td align="center" valign="top" width="79">
+							<img src="image/imgSeccionesPaises.gif">
+						</td>
+						<td align="center" valign="top" width="362">
+							<iframe src="editor.ListaCiudades.php" height="430" width="360" name="frmLocacion" marginwidth="5" marginheight="5" border="0" frameborder="0" style="border: 1px solid #000000"></iframe>
+						</td>
+						<td align="center" width="361">
+							<iframe src="editor.ListaServicios.php" height="430" width="360" name="frmSecciones" marginwidth="5" marginheight="5" border="0" frameborder="0" style="border: 1px solid #000000"></iframe>
+						</td>
+						<td align="center" valign="top" width="80">
+							<img src="image/imgSeccionesSecciones.gif"></td>
+					</tr>
+				</tbody></table>
+ -->
+						</td>
+					</tr>
+				</table>
+				</div>
+		<div id="editor_3" align="center" style="display: none;">
+		<table cellspacing="0" width="100%">
+		<tr><td colspan="2"><hr noshade size="1"></td></tr>
+		<tr>
+			<td align="center" valign="top" width="20%"><em>HTML </em><strong>Superior</strong> <br>
+		  <img src="image/imgSeccionesHTMLSuperior.gif"></td>
+			<td valign="top" width="80%" align="center">
+				<textarea rows="7" name="html_superior1" cols="90">{html_superior1}</textarea></td>
+		</tr>
+		</table>
+		</div>
+		<div id="editor_4" align="center" style="display: none;">
+		<table cellspacing="0" width="100%">	
+		<tr><td colspan="2"><hr noshade size="1"></td></tr>
+		<tr>
+			<td align="center" valign="top" width="20%"><em>HTML </em><strong>Menu</strong> <br>
+		  <img src="image/imgSeccionesHTMLMenu.gif"></td>
+			<td valign="top" width="80%" align="center">
+				<textarea rows="7" name="html_menu" cols="90">{html_menu}</textarea></td>
+		</tr>
+		</table>
+		</div>
+		<div id="editor_5" align="center" style="display: none;">
+		<table cellspacing="0" width="100%">
+		<tr><td colspan="2"><hr noshade size="1"></td></tr>
+		<tr>
+			<td align="center" valign="top" width="20%"><em>HTML </em><strong>Inferior</strong> <br>
+		  <img src="image/imgSeccionesHTMLInferior.gif"></td>
+			<td valign="top" width="80%" align="center">
+				<textarea rows="7" name="html_inferior" cols="90">{html_inferior}</textarea></td>
+		</tr>		
+	</tbody></table>
+	</div>	
+	</form>
+
+
+
+</body></html>

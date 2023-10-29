@@ -1,0 +1,1137 @@
+body {
+	/*margin:0px 0px;
+	padding:0px;
+	text-align:center;*/
+	}
+
+a {
+	text-decoration:none;
+	color:#000000;
+}
+
+.navegador{	
+	font-family: Tahoma;
+	color: black;
+	font-size: 9px;
+}
+
+.html_contenido {
+	font-family: Tahoma;
+	color: red;
+	font-size: 9px;
+}*/
+
+
+.spacer {
+  clear:both;
+	height:2px;
+  }
+	
+.contenedor_principal{
+	background-color:#E5E5E5;
+	margin:0px auto;
+	text-align:left;
+	width:800px;
+}
+	
+.encabezado {
+	background-color:#FFFF99;
+	width:780px;
+	height:120px;
+}
+
+.logo_encabezado{
+	float:left;
+	background-color:#FF3300;
+	width:280px;
+	height:120px;
+}
+
+.banner_encabezado{
+	float:left;
+	background-color:#FFA86F;
+	width:500px;
+	height:120px;
+}
+
+.menu_banderas{
+	background-color:#CCCCCC;
+	width:780px;
+	height:50px;
+}
+
+.bandera{
+		padding-top: 3px;
+		padding-left: 3px;
+		padding-right: 3px;
+	background-color:#3399FF;
+	border:1px solid #FFF;
+		margin-top:1px;
+		margin-bottom:1px;
+		margin-left:1px;
+		margin-right:1px;
+	float:left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: center;
+}
+
+.banners{
+	background-color:#999999;
+	width:780px;
+	height:166px;
+}
+
+.banner_largo{
+	float:left;
+	background-color:#FFA86F;
+	border:1px solid #000;
+	margin:2px;
+	width:381px;
+	height:160px;
+}
+
+.banner_corto{
+	float:left;
+	background-color:#FF3300;
+	border:1px solid #000;
+	margin:2px 2px 2px 0px;
+	width:127px;
+	height:160px;
+}
+
+.banner_33{
+	float:left;
+	background-color:#FF3300;
+	border:1px solid #000;
+	margin:2px 2px 2px 0px;
+	width:255px;
+	height:160px;
+}
+
+.contenido{
+	background-color:#99CCFF;
+	width:780px;
+}
+
+.menu_izquierdo{
+	float:left;
+	background-color:#FFA86F;
+	border:1px solid #000;
+	margin:0px;
+	width:228;
+	height:300px;
+}
+
+.menu_derecho{
+	float:left;
+	background-color:#FFA86F;
+	border:1px solid #000;
+	margin:0px;
+	width:228;
+	height:300px;
+}
+
+.cuerpo{
+	float:left;
+	background-color:#FFFFFF;
+	border:1px solid #000;
+	margin:0px;
+	width:316;
+	height:300px;
+}
+
+.direccion{
+	background-color:#CCCCCC;
+	width:780px;
+	height:75px;
+}
+
+
+/**/
+
+
+.brownBG {
+
+
+
+	BACKGROUND-COLOR: #ef6b00
+
+
+
+}
+
+
+
+.textColor {
+
+
+
+	COLOR: #996666
+
+
+
+}
+
+
+
+.cptopic {
+
+
+
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #996666; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+
+
+
+}
+
+
+
+BODY.mainBody {
+
+
+
+	MARGIN-TOP: 0px; COLOR: #000000; BACKGROUND-COLOR: #ffffff
+
+
+
+}
+
+
+
+#mainTable {
+
+
+
+	WIDTH: 770px; BACKGROUND-COLOR: #ffffff
+
+
+
+}
+
+
+
+.bigOne#mainTable {
+
+
+
+	
+
+
+
+}
+
+
+
+TABLE.pricesTable {
+
+
+
+	BORDER-RIGHT: #000000 0px solid; BORDER-TOP: #000000 0px solid; FONT-WEIGHT: bold; FONT-SIZE: 10px; BORDER-LEFT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center;
+
+
+
+}
+
+
+
+TABLE.linkTable {
+
+
+
+	WIDTH: 460px; HEIGHT: 112px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: left
+
+
+
+}
+
+
+
+TABLE.innerMiddle {
+
+
+
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 10px; BORDER-LEFT: 0px; WIDTH: 100%; COLOR: #705555; BORDER-BOTTOM: 0px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: justify
+
+
+
+}
+
+
+
+TABLE.links2Pages {
+
+
+
+	WIDTH: 100%
+
+
+
+}
+
+
+
+TR.topRow {
+
+
+
+	HEIGHT: 60px; BACKGROUND-COLOR: #ff6600
+
+
+
+}
+
+
+
+TR.topRow2 {
+
+
+
+	HEIGHT: 30px; BACKGROUND-COLOR: #ff6600
+
+
+
+}
+
+
+
+TABLE.pricesTable TH {
+
+
+
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-LEFT-COLOR: #ff6600; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #ff6600; COLOR: #ffffff; BORDER-TOP-COLOR: #ff6600; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #ff6600
+
+
+
+}
+
+
+
+TABLE.pricesTable TD:unknown {
+
+
+
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: #ffcc00
+
+
+
+}
+
+
+
+TABLE.pricesTable TD.prim {
+
+
+
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; COLOR: #996666; BORDER-BOTTOM: 0px; BACKGROUND-COLOR:#feb712;
+
+
+
+}
+
+
+
+TABLE.pricesTable TD {
+
+
+
+	BORDER-RIGHT: #ff9900 1px solid; BORDER-TOP: #ff9900 1px solid; BORDER-LEFT: #ff9900 1px solid; COLOR: #996666; BORDER-BOTTOM: #ff9900 1px solid
+
+
+
+}
+
+
+
+.smallP {
+
+
+
+	TEXT-ALIGN: justify
+
+
+
+}
+
+
+
+#leftCol {
+
+
+
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; WIDTH: 50%
+
+
+
+}
+
+
+
+#rightCol {
+
+
+
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; WIDTH: 50%
+
+
+
+}
+
+
+
+TABLE.linkTable TD {
+
+
+
+	HEIGHT: 21px
+
+
+
+}
+
+
+
+#linkContainer {
+
+
+
+	VERTICAL-ALIGN: top
+
+
+
+}
+
+
+
+.left#linkContainer {
+
+
+
+	WIDTH: 17%
+
+
+
+}
+
+
+
+.right#linkContainer {
+
+
+
+	WIDTH: 17%
+
+
+
+}
+
+
+
+#linkContainer TD {
+
+
+
+	BORDER-RIGHT: #feb712 1px solid; BORDER-TOP: #feb712 1px solid; FONT-SIZE: 10px; BORDER-LEFT: #feb712 1px solid; BORDER-BOTTOM: #feb712 1px solid; HEIGHT: 36px; BACKGROUND-COLOR: #ffcc00; TEXT-ALIGN: center
+
+
+
+}
+
+
+
+.left#linkContainer TD {
+
+
+
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+
+
+
+}
+
+
+
+.right#linkContainer TD {
+
+
+
+	FONT-WEIGHT: bold; FONT-FAMILY: Tahoma
+
+
+
+}
+
+
+
+TD.middlePart {
+
+
+
+	BORDER-LEFT-COLOR: #ffffff; BORDER-BOTTOM-COLOR: #ffffff; VERTICAL-ALIGN: top; WIDTH: 66%; BORDER-TOP-COLOR: #ffffff; BACKGROUND-COLOR: #ef6b00; BORDER-RIGHT-COLOR: #ffffff
+
+
+
+}
+
+
+
+TD.innerHeader {
+
+
+
+	FONT-SIZE: 18px; PADDING-BOTTOM: 10px; COLOR: #000000; TEXT-ALIGN: left
+
+
+
+}
+
+
+
+TD.innerTitle {
+
+
+
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #ffffff; BACKGROUND-COLOR: #ef6b00; TEXT-ALIGN: left
+
+
+
+}
+
+
+
+TD.pic {
+
+
+
+	TEXT-ALIGN: center
+
+
+
+}
+
+
+
+TD.timeTo {
+
+
+
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; PADDING-TOP: 30px; FONT-STYLE: italic; TEXT-ALIGN: center
+
+
+
+}
+
+
+
+TD.formHeader {
+
+
+
+	FONT-SIZE: 10px; PADDING-TOP: 30px; TEXT-ALIGN: justify
+
+
+
+}
+
+
+
+TD.inSpain {
+
+
+
+	FONT-WEIGHT: bold; PADDING-TOP: 10px; FONT-STYLE: italic
+
+
+
+}
+
+
+
+TD.withUs {
+
+
+
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; COLOR: #000000; PADDING-TOP: 40px; TEXT-ALIGN: right
+
+
+
+}
+
+
+
+TABLE.linkTable IMG {
+
+
+
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; WIDTH: 19px; BORDER-BOTTOM: 0px; HEIGHT: 13px
+
+
+
+}
+
+
+
+IMG.logo {
+
+
+
+	WIDTH: 230px; HEIGHT: 86px
+
+
+
+}
+
+
+
+TH P {
+
+
+
+	MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px
+
+
+
+}
+
+
+
+TD.smallP P {
+
+
+
+	MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px
+
+
+
+}
+
+
+
+P.priceTableDescr {
+
+
+
+	MARGIN-TOP: 20px; FONT-WEIGHT: bold; FONT-SIZE: 10px
+
+
+
+}
+
+
+
+P.upperText {
+
+
+
+	FONT-SIZE: 10px; MARGIN-BOTTOM: 15px; COLOR: #000000; FONT-STYLE: italic; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: center
+
+
+
+}
+
+
+
+P.direction1 {
+
+
+
+	MARGIN-TOP: 10px; MARGIN-BOTTOM: 5px; COLOR: #ffffff; FONT-FAMILY: Tahoma; TEXT-ALIGN: center
+
+
+
+}
+
+
+
+P.direction2 {
+
+
+
+	PADDING-BOTTOM: 15px; COLOR: #ffffff; FONT-FAMILY: Tahoma; TEXT-ALIGN: center
+
+
+
+}
+
+
+
+P.linksTables {
+
+
+
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; TEXT-ALIGN: center
+
+
+
+}
+
+
+
+P.bottom {
+
+
+
+	MARGIN: 7px 140px 0px; TEXT-ALIGN: center
+
+
+
+}
+
+
+
+P.inscrElement {
+
+
+
+	FONT-SIZE: 12px; COLOR: #996666
+
+
+
+}
+
+
+
+DIV.keywords {
+
+
+
+	FONT-SIZE: 11pt; COLOR: #ffffff; FONT-FAMILY: Arial; TEXT-ALIGN: center;
+
+
+
+}
+
+
+
+SPAN.courseType {
+
+
+
+	FONT-SIZE: 13px; COLOR: #ff6600
+
+
+
+}
+
+
+
+SPAN.courseType:first-letter {
+
+
+
+	FONT-SIZE: 16px; COLOR: #000000
+
+
+
+}
+
+
+
+SPAN.learn {
+
+
+
+	COLOR: #ef6b00
+
+
+
+}
+
+
+
+SPAN.enjoy {
+
+
+
+	COLOR: #000000
+
+
+
+}
+
+
+
+SPAN.QC {
+
+
+
+	FONT-WEIGHT: bold; COLOR: #ff6600; FONT-FAMILY: Arial, Helvetica, sans-serif
+
+
+
+}
+
+
+
+SPAN.linksBottom {
+
+
+
+	FONT-SIZE: 10px; COLOR: #0000ff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+
+
+
+}
+
+
+
+SPAN.QCdir {
+
+
+
+	FONT-SIZE: 16px; FONT-FAMILY: Arial, Helvetica, sans-serif
+
+
+
+}
+
+
+SPAN.Estilo1 {
+
+
+COLOR: #EF6B00; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+
+			
+			}
+
+
+
+
+
+SPAN.QCdirFirst {
+
+
+
+	FONT-SIZE: 26px
+
+
+
+}
+
+
+
+A {
+
+
+
+	TEXT-DECORATION: none
+
+
+
+}
+
+
+
+TABLE.linkTable A {
+
+
+
+	FONT-SIZE: 10px; COLOR: #996666; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+
+
+
+}
+
+
+
+TABLE.linkTable A:hover {
+
+
+
+	COLOR: #000000; TEXT-DECORATION: underline
+
+
+
+}
+
+
+
+#linkContainer A {
+
+
+
+	COLOR: #996666
+
+
+
+}
+
+
+
+#linkContainer A:hover {
+
+
+
+	TEXT-DECORATION: underline
+
+
+
+}
+
+
+
+
+.cityLink {
+	display: block;
+	font-family: Tahoma;
+	FONT-SIZE: 12px;
+
+}
+
+
+
+
+
+.red {
+
+
+
+	bgcolor: #B70A0A
+
+
+
+}
+
+
+
+SPAN.linksBottom A {
+
+
+
+	COLOR: #000000
+
+
+
+}
+
+
+
+SPAN.linksBottom A:hover {
+
+
+
+	TEXT-DECORATION: underline
+
+
+
+}
+
+
+
+A.schoolType {
+
+
+
+	FONT-WEIGHT: bold; COLOR: #ff6600
+
+
+
+}
+
+
+
+A.schoolType:hover {
+
+
+
+	TEXT-DECORATION: underline
+
+
+
+}
+
+
+
+TABLE.links2Pages A {
+
+
+
+	FONT-SIZE: 10px; COLOR: #996666; FONT-FAMILY: Tahoma
+
+
+
+}
+
+
+
+TABLE.innerMiddle TD.link A:hover {
+
+
+
+	COLOR: #cc0033; TEXT-DECORATION: none
+
+
+
+}
+
+
+
+TABLE.innerMiddle TD.link A:visited {
+
+
+
+	COLOR: #cc0033; TEXT-DECORATION: none
+
+
+
+}
+
+
+
+TABLE.innerMiddle TD.link A:link {
+
+
+
+	COLOR: #cc0033; TEXT-DECORATION: none
+
+
+
+}
+
+
+
+LI {
+
+
+
+	MARGIN-BOTTOM: 1px; MARGIN-LEFT: -15px
+
+
+
+}
+
+
+
+HR.coursesSeparator {
+
+
+
+	MARGIN-TOP: 30px; MARGIN-BOTTOM: 30px
+
+
+
+}
+
+
+
+HR {
+
+
+
+	COLOR: #ff6600
+
+
+
+}
+
+
+
+H2 {
+
+
+
+	MARGIN-TOP: 50px; FONT-SIZE: 18px; PADDING-BOTTOM: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+
+
+
+}
+
+
+
+P.h2 {
+
+
+
+	MARGIN-TOP: 50px; FONT-SIZE: 18px; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+
+
+
+}
+
+
+
+.htitle {
+	color:#ffffff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	margin-top:4px;
+	margin-bottom:4px;
+	text-align:center;
+}
+
+
+
+.h3 {
+
+
+
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+
+
+
+	font-size: 10px;
+
+
+
+	MARGIN: 7px 140px 0px; 
+
+
+
+	TEXT-ALIGN: center;
+
+
+
+	/*font-style: italic;*/
+
+
+
+}
+
+
+
+.QC1 {
+
+
+
+	font-family: Arial, Helvetica, sans-serif;
+
+
+
+	font-size: 12px;
+
+
+
+	color: #FFFFFF;
+
+
+
+	font-weight: bold;
+
+
+
+}
+
+
+
+.h32 {
+
+
+
+    FONT-FAMILY: Arial;
+
+
+
+	font-size: 10px; 
+
+
+
+	TEXT-ALIGN: center;
+
+
+
+	font-style: italic;
+
+
+
+}

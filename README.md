@@ -1,2 +1,3 @@
 # pyQualityCourses
-Un juguete que hice allá por el 2007
+
+Un juguetito que hice allá por el 2007

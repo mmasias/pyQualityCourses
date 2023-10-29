@@ -1,0 +1,178 @@
+<meta http-equiv="Content-type" content='text/html; charset="ISO-8859-1"' />
+<meta http-equiv="pragma" content="nocache">
+<html>
+	<head>
+	<title>Proyecto Quality-Courses - Prototipo de editor</title>
+  <script type="text/javascript" src="/FCKeditor/fckeditor.js"></script>
+
+  <script type="text/javascript">
+  <!--
+  function ReplaceAllTextareas() {
+          // replace all of the textareas
+          var allTextAreas = document.getElementsByTagName("textarea");
+          for (var i=0; i < allTextAreas.length; i++) {
+          var oFCKeditor = new FCKeditor( allTextAreas[i].name ) ;
+	          oFCKeditor.BasePath = "/FCKeditor/" ;
+						oFCKeditor.Width=800;
+						oFCKeditor.Height=450;
+						oFCKeditor.ToolbarSet = 'qualityCourses';
+						if (allTextAreas[i].name!="txtDescripcion"){
+		          oFCKeditor.ReplaceTextarea() ;
+	          }
+          }
+  }
+
+	function arregla(elemento){
+		var oEditor = FCKeditorAPI.GetInstance(elemento);
+		oEditor.Commands.GetCommand('Source').Execute();
+		oEditor.Commands.GetCommand('Source').Execute();
+	}	
+	
+  function verEditor(id){
+	  inicializaEditores();
+     var obj = document.getElementById('editor_' + id)
+     if(obj.style.display == 'block') obj.style.display = 'none'
+     else obj.style.display = 'block'
+		// Corrección para que se muestre en modo editar
+		if (id>1){
+			if (navigator.appName!="Microsoft Internet Explorer"){
+					arregla('txthtml_contenido');
+					arregla('txthtml_menu');
+					arregla('txthtml_pieLocal');
+			}
+		}		 
+  }
+  
+  function inicializaEditores(){
+  	editores=document.getElementsByTagName('div');
+  	numContenedores = editores.length;
+		for(m=0; m < numContenedores; m++){
+       if(editores[m].id.indexOf('editor_') == 0)
+       editores[m].style.display = 'none'
+    }  	
+  }
+  //-->
+  
+  </script>	
+<link rel="stylesheet" type="text/css" href="_editor.quality-courses.css">
+</head>
+<body onLoad="javascript: ReplaceAllTextareas(); inicializaEditores(); verEditor(1);">
+<form xaction="sampleposteddata.php" action="editor.CiudadPais._Graba.php" method="POST" autocomplete="off">
+<table border="0" width="100%" bgcolor="#FF9900">
+	<tr>
+		<td align="center" class="seccionTitulo"><font color="#FFFFFF"><b>Editor 
+		Ciudad</b></font></td>
+		<td align="center"><a class="btnToolbar" href='#' onclick='javascript:verEditor(1)'>General</a></td>
+		<td align="center"><a class="btnToolbar" href='#' onclick='javascript:verEditor(2)'>Editor Contenido</a></td>
+		<td align="center"><a class="btnToolbar" href='#' onclick='javascript:verEditor(3)'>Editor HTML Libre</a></td>
+		<td align="center"><a class="btnToolbar" href='#' onclick='javascript:verEditor(5)'>Editor HTML Pie</a></td>
+		<td align="center"><a class="btnToolbar" href='#' onclick='javascript:verEditor(4)'>metaTags</a></td>
+		<td align="center"><input type="submit" value="Graba"></td>
+		<td align="center"><a class="btnToolbar" href="editor.Paises.php?idPais={txtIdPais}">Volver</a></td>
+	</tr>
+</table>
+	<div id="editor_1" align="center">
+	<table border="0" width="100%" cellspacing="0" cellpadding="0">
+		<tr>
+			<td><hr noshade size="1"></td>
+		</tr>
+		<tr>
+			<td align="center">
+			<table border="0" cellspacing="0" cellpadding="3">
+				<tr>
+					<td colspan="2" class="tablaTitulo">
+						{NombreCiudad}@{NombrePais}
+						<input type="hidden" name="txtIdPais" value="{txtIdPais}"> 
+						<input type="hidden" name="txtIdCiudad" value="{txtIdCiudad}">
+					</td>
+				</tr>
+				<tr>
+					<td class="tablaRegistro">Nombre Local</td>
+					<td class="tablaRegistro">
+							<input name="txtNombreLocal" type="text" value="{txtNombreLocal}" size="30"></td>
+				</tr>
+				<tr>
+					<td class="tablaRegistro">Texto de enlace</td>
+					<td class="tablaRegistro">
+							<input name="txtNombreEnlace" type="text" size="30" value="{txtNombreEnlace}"></td>
+				</tr>
+				<tr>
+					<td class="tablaRegistro">Nombre archivo HTML</td>
+					<td class="tablaRegistro">
+							<input name="txtNombreHTML" type="text" size="30" value="{txtNombreHTML}"></td>
+				</tr>
+				<tr>
+					<td class="tablaRegistro">Nombre en barra de navegación</td>
+					<td class="tablaRegistro">
+							<input name="txtNombreBarraNavegacion" type="text" size="30" value="{txtNombreBarraNavegacion}"></td>
+				</tr>
+				<tr>
+					<td class="tablaRegistro">Marquesina</td>
+					<td class="tablaRegistro">
+							<input name="txtMarquesina" type="text" size="99" value="{txtMarquesina}"></td>
+				</tr>
+				<tr>
+					<td class="tablaRegistro">Titulo (&lt;TITLE&gt;)</td>
+					<td class="tablaRegistro">
+							<input name="txtTitle" type="text" size="99" value="{txtTitle}"></td>
+				</tr>
+				<tr>
+					<td class="tablaRegistro">Descripción</td>
+					<td class="tablaRegistro">
+							<textarea rows="4" name="txtDescripcion" cols="40">{txtDescripcion}</textarea></td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+</table>
+</div>
+	<div id="editor_2" align="center" style="display: none;">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr><td colspan="2"><hr size="1"/></td></tr>
+			<tr>
+				<td width="20%" align="center" valign="top" bgcolor="#EEEEEE">
+				<font size="2">contenido</font>
+				<br /><img src="image/imgSeccionesContenido.gif" width="74" height="100"/></td>
+				<td width="80%" valign="top" bgcolor="#FFFFFF">
+					<textarea rows="7" name="txthtml_contenido" cols="90">{txthtml_contenido}</textarea>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="editor_3" align="center" style="display: none;">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr><td colspan="2"><hr size="1"/></td></tr>
+			<tr>
+				<td width="20%" align="center" valign="top" bgcolor="#EEEEEE">
+				<font size="2">menu</font><br /><img src="image/imgSeccionesHTMLMenu.gif"/></td>
+				<td width="80%" valign="top" bgcolor="#FFFFFF">
+					<textarea rows="7" name="txthtml_menu" cols="90">{txthtml_menu}</textarea>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="editor_4" align="center" style="display: none;">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">		
+			<tr><td><hr size="1"/></td></tr>
+			<tr>
+				<td width="100%" align="center" valign="top" bgcolor="#EEEEEE">
+				<iframe src="{urlMetaTags}" height="430" width="800" name="frmMetaTags" marginwidth="5" marginheight="5" border="0" frameborder="0" style="border: 1px solid #000000"></iframe>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="editor_5" align="center" style="display: none;">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr><td colspan="2"><hr size="1"/></td></tr>
+			<tr>
+				<td width="20%" align="center" valign="top" bgcolor="#EEEEEE">
+				<font size="2">Pie</font><br /><img src="image/imgSeccionesPiePagina.gif"/></td>
+				<td width="80%" valign="top" bgcolor="#FFFFFF">
+					<textarea rows="7" name="txthtml_pieLocal" cols="90">{txthtml_pieLocal}</textarea>
+				</td>
+			</tr>
+		</table>
+	</div>	
+</form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<meta http-equiv="Content-type" content='text/html; charset="ISO-8859-1"' />
+<html>
+	<head>
+	<title>Proyecto Quality-Courses - Prototipo de editor</title>
+	<script language="javascript">
+		
+		function verPais(){
+			ElementoSeleccionado=document.forms['frmPaises'].lstPais.selectedIndex;
+			idPais=document.forms['frmPaises'].lstPais.options[ElementoSeleccionado].value;
+			NombrePais=document.forms['frmPaises'].lstPais.options[ElementoSeleccionado].text;
+			alert("Editaremos "+NombrePais);
+			parent.location="http://www.estrategiasmoviles.com/quality-courses/editor.Paises.php?idPais="+idPais;
+		}
+		
+	</script>
+	</head>
+<body>
+	<table>
+	<form action="" method="POST">
+	<tr><td><input type="text" name="txtPais" /></td><td><input type="SUBMIT" value="Agregar" /></td></tr>
+	</form>
+	<tr><td colspan="2"><hr/></td></tr>
+	<form name="frmPaises" action="sampleposteddata.php" method="POST">
+		<tr>
+			<td>
+				<select name="lstPais" size="8">
+					<!-- START BLOCK : listaPaises-->
+				  <option value={id}>{pais}</option>
+					<!-- END BLOCK : listaPaises -->
+				</select>
+			</td>
+			<td>
+				[RENOMBRAR]<br />
+			  [SUBIR][BAJAR]<br />
+			  [ELIMINAR]
+				<hr />
+				[<a href="javascript:verPais();">ADMINISTRAR</a>]
+			</td>
+		</tr>
+
+	</form>
+	</table>	
+</body>
+</html>
