@@ -1,4 +1,4 @@
-<img src="imagenes/CapturaDePantalla2023-10-29-11.15.39@2x.png" width=40% align=right >
+<img src="imagenes/CapturaDePantalla2023-10-29-11.15.39@2x.png" width=50% align=right >
 
 # QualityCourses - CMS Multilingüe
 
