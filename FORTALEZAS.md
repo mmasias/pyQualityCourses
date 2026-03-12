@@ -245,6 +245,49 @@ Patrón CRUD repetible en más de 40 archivos del sistema, con consistencia en n
 - Consistencia reduce curva de aprendizaje
 - Código autodocumentado por patrones
 
+### Mapeo de archivos CRUD (50 archivos totales)
+
+| Entidad | Lista | Editar | Grabar | Eliminar | Actualizar | Total |
+|---------|-------|--------|--------|----------|-----------|-------|
+| **FrontPage** | - | [editor.FrontPage.php](var/www/html/editor.FrontPage.php) (45) | [editor.FrontPage._Graba.php](var/www/html/editor.FrontPage._Graba.php) (37) | - | - | **2** |
+| **General** | - | [editor.General.php](var/www/html/editor.General.php) (53) | - | - | - | **1** |
+| **MetaTags** | [editor.lista.metaTags.php](var/www/html/editor.lista.metaTags.php) (35) | [editor.MetaTags.php](var/www/html/editor.MetaTags.php) (58) | [editor.lista.metaTags_graba.php](var/www/html/editor.lista.metaTags_graba.php) (37) | - | [editor.MetaTags._Graba.php](var/www/html/editor.MetaTags._Graba.php) (58) | **4** |
+| **Paises** | [editor.ListaPaises.php](var/www/html/editor.ListaPaises.php) (45) | [editor.Paises.php](var/www/html/editor.Paises.php) (179) | [editor.Paises._Graba.php](var/www/html/editor.Paises._Graba.php) (86) | [editor.Paises._Eliminar.php](var/www/html/editor.Paises._Eliminar.php) (14) | [editor.Paises._Edita.php](var/www/html/editor.Paises._Edita.php) (60)<br>[editor.Paises._ActualizaOrden.php](var/www/html/editor.Paises._ActualizaOrden.php) (21) | **6** |
+| **Ciudades** | [editor.ListaCiudades.php](var/www/html/editor.ListaCiudades.php) (35) | - | [editor.Ciudades._Graba.php](var/www/html/editor.Ciudades._Graba.php) (30) | [editor.Ciudades._Eliminar.php](var/www/html/editor.Ciudades._Eliminar.php) (14) | - | **3** |
+| **CiudadPais** | - | [editor.CiudadPais.php](var/www/html/editor.CiudadPais.php) (64) | [editor.CiudadPais._Graba.php](var/www/html/editor.CiudadPais._Graba.php) (58) | - | - | **2** |
+| **Servicios** | [editor.ListaServicios.php](var/www/html/editor.ListaServicios.php) (35) | - | [editor.Servicios._Graba.php](var/www/html/editor.Servicios._Graba.php) (30) | [editor.Servicios._Eliminar.php](var/www/html/editor.Servicios._Eliminar.php) (14) | - | **3** |
+| **ServicioPais** | - | [editor.ServicioPais.php](var/www/html/editor.ServicioPais.php) (64) | [editor.ServicioPais._Graba.php](var/www/html/editor.ServicioPais._Graba.php) (59) | - | - | **2** |
+| **ServicioCiudadPais** | [editor.ListaServicioCiudadesPais.php](var/www/html/editor.ListaServicioCiudadesPais.php) (69) | [editor.ServicioCiudadPais.php](var/www/html/editor.ServicioCiudadPais.php) (73) | [editor.ServicioCiudadPais._Graba.php](var/www/html/editor.ServicioCiudadPais._Graba.php) (67) | - | - | **3** |
+| **Idioma.Pais** | - | [editor.Idioma.Pais.php](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais.php) (192) | [editor.Idioma.Pais._Graba.php](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais._Graba.php) (62) | [editor.Idioma.Pais._Eliminar.php](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais._Eliminar.php) (15) | [editor.Idioma.Pais._Edita.php](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais._Edita.php) (37) | **4** |
+| **Idioma.CiudadPais** | - | [editor.Idioma.CiudadPais.php](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.CiudadPais.php) (76) | [editor.Idioma.CiudadPais._Graba.php](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.CiudadPais._Graba.php) (66) | - | - | **2** |
+| **Idioma.ServicioPais** | - | [editor.Idioma.ServicioPais.php](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioPais.php) (76) | [editor.Idioma.ServicioPais._Graba.php](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioPais._Graba.php) (62) | - | - | **2** |
+| **Idioma.ServicioCiudadPais** | - | [editor.Idioma.ServicioCiudadPais.php](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioCiudadPais.php) (81) | [editor.Idioma.ServicioCiudadPais._Graba.php](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioCiudadPais._Graba.php) (72) | - | - | **2** |
+| **ListaCiudades** | [editor.Lista.Ciudades.php](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Lista.Ciudades.php) (42) | - | - | - | - | **1** |
+| **ListaIdiomaServicioCiudadesPais** | [editor.ListaIdiomaServicioCiudadesPais.php](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.ListaIdiomaServicioCiudadesPais.php) (69) | - | - | - | - | **1** |
+| **MapaIdiomas** | [editor.Mapa.Idiomas.php](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Mapa.Idiomas.php) (81) | - | - | - | - | **1** |
+| **Idioma.MetaTags** | - | [editor.Idioma.MetaTags.php](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.MetaTags.php) (59) | [editor.Idioma.MetaTags._Graba.php](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.MetaTags._Graba.php) (52) | - | - | **2** |
+| **Prueba** | - | [editor.Prueba.php](var/www/html/editor.Prueba.php) (48) | - | - | - | **1** |
+| **TOTAL** | **9** | **11** | **12** | **5** | **3** | **40** |
+
+**Leyenda:**
+- Números entre paréntesis = líneas de código del archivo
+- **Enlaces clicable** = clic para ver el código fuente
+- **Números en negrita** = total de archivos por operación
+
+**Patrón de nomenclatura consistente:**
+- `editor.Lista*.php` - Listado de registros
+- `editor.[Entidad].php` - Formulario de edición/visualización
+- `editor.[Entidad]._Graba.php` - Crear o actualizar registro
+- `editor.[Entidad]._Edita.php` - Actualización específica
+- `editor.[Entidad]._Eliminar.php` - Eliminar registro
+- `editor.[Entidad]._ActualizaOrden.php` - Reordenar registros
+
+**Consistencia en tamaño de archivos:**
+- Archivos de eliminación: 14-15 líneas (muy consistentes)
+- Archivos de grabación: 30-86 líneas (conocido según complejidad)
+- Archivos de edición: 35-192 líneas (conocido según complejidad)
+- Archivos de lista: 35-81 líneas (conocido según complejidad)
+
 ### Implementación
 
 **Nomenclatura consistente de archivos CRUD**
