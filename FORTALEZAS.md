@@ -247,7 +247,7 @@ Patrón CRUD repetible en más de 40 archivos del sistema, con consistencia en n
 
 ### Mapeo de archivos CRUD (50 archivos totales)
 
-| Entidad | Lista<br>`editor.ListaX.php` | Editar<br>`editor.X.php` | Grabar<br>`editor.X_Graba.php` | Eliminar<br>`editor.X_Eliminar.php` | Actualizar<br>`editor.*.php` | Total |
+| Entidad | Listar<br><sub>`editor.ListaX.php` | Editar<br><sub>`editor.X.php` | Grabar<br><sub><sub>`editor.X_Graba.php` | Eliminar<br><sub>`editor.X_Eliminar.php` | Actualizar<br><sub>`editor.*.php` | Total |
 |---------|-------|--------|--------|----------|-----------|-------|
 | <sub>**FrontPage** | - | [🔗](var/www/html/editor.FrontPage.php) (45) | [🔗](var/www/html/editor.FrontPage._Graba.php) (37) | - | - | **2** |
 | <sub>**General** | - | [🔗](var/www/html/editor.General.php) (53) | - | - | - | **1** |
