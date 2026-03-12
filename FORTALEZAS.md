@@ -249,24 +249,24 @@ Patrón CRUD repetible en más de 40 archivos del sistema, con consistencia en n
 
 | Entidad | Lista<br>`editor.ListaX.php` | Editar<br>`editor.X.php` | Grabar<br>`editor.X_Graba.php` | Eliminar<br>`editor.X_Eliminar.php` | Actualizar<br>`editor.*.php` | Total |
 |---------|-------|--------|--------|----------|-----------|-------|
-| **FrontPage** | - | [🔗](var/www/html/editor.FrontPage.php) (45) | [🔗](var/www/html/editor.FrontPage._Graba.php) (37) | - | - | **2** |
-| **General** | - | [🔗](var/www/html/editor.General.php) (53) | - | - | - | **1** |
-| **MetaTags** | [🔗](var/www/html/editor.lista.metaTags.php) (35) | [🔗](var/www/html/editor.MetaTags.php) (58) | [🔗](var/www/html/editor.lista.metaTags_graba.php) (37) | - | [🔗](var/www/html/editor.MetaTags._Graba.php) (58) | **4** |
-| **Paises** | [🔗](var/www/html/editor.ListaPaises.php) (45) | [🔗](var/www/html/editor.Paises.php) (179) | [🔗](var/www/html/editor.Paises._Graba.php) (86) | [🔗](var/www/html/editor.Paises._Eliminar.php) (14) | [🔗](var/www/html/editor.Paises._Edita.php) (60)<br>[🔗](var/www/html/editor.Paises._ActualizaOrden.php) (21) | **6** |
-| **Ciudades** | [🔗](var/www/html/editor.ListaCiudades.php) (35) | - | [🔗](var/www/html/editor.Ciudades._Graba.php) (30) | [🔗](var/www/html/editor.Ciudades._Eliminar.php) (14) | - | **3** |
-| **CiudadPais** | - | [🔗](var/www/html/editor.CiudadPais.php) (64) | [🔗](var/www/html/editor.CiudadPais._Graba.php) (58) | - | - | **2** |
-| **Servicios** | [🔗](var/www/html/editor.ListaServicios.php) (35) | - | [🔗](var/www/html/editor.Servicios._Graba.php) (30) | [🔗](var/www/html/editor.Servicios._Eliminar.php) (14) | - | **3** |
-| **ServicioPais** | - | [🔗](var/www/html/editor.ServicioPais.php) (64) | [🔗](var/www/html/editor.ServicioPais._Graba.php) (59) | - | - | **2** |
-| **ServicioCiudadPais** | [🔗](var/www/html/editor.ListaServicioCiudadesPais.php) (69) | [🔗](var/www/html/editor.ServicioCiudadPais.php) (73) | [🔗](var/www/html/editor.ServicioCiudadPais._Graba.php) (67) | - | - | **3** |
-| **Idioma.Pais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais.php) (192) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais._Graba.php) (62) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais._Eliminar.php) (15) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais._Edita.php) (37) | **4** |
-| **Idioma.CiudadPais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.CiudadPais.php) (76) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.CiudadPais._Graba.php) (66) | - | - | **2** |
-| **Idioma.ServicioPais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioPais.php) (76) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioPais._Graba.php) (62) | - | - | **2** |
-| **Idioma.ServicioCiudadPais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioCiudadPais.php) (81) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioCiudadPais._Graba.php) (72) | - | - | **2** |
-| **ListaCiudades** | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Lista.Ciudades.php) (42) | - | - | - | - | **1** |
-| **ListaIdiomaServicioCiudadesPais** | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.ListaIdiomaServicioCiudadesPais.php) (69) | - | - | - | - | **1** |
-| **MapaIdiomas** | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Mapa.Idiomas.php) (81) | - | - | - | - | **1** |
-| **Idioma.MetaTags** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.MetaTags.php) (59) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.MetaTags._Graba.php) (52) | - | - | **2** |
-| **Prueba** | - | [🔗](var/www/html/editor.Prueba.php) (48) | - | - | - | **1** |
+| <sub>**FrontPage** | - | [🔗](var/www/html/editor.FrontPage.php) (45) | [🔗](var/www/html/editor.FrontPage._Graba.php) (37) | - | - | **2** |
+| <sub>**General** | - | [🔗](var/www/html/editor.General.php) (53) | - | - | - | **1** |
+| <sub>**MetaTags** | [🔗](var/www/html/editor.lista.metaTags.php) (35) | [🔗](var/www/html/editor.MetaTags.php) (58) | [🔗](var/www/html/editor.lista.metaTags_graba.php) (37) | - | [🔗](var/www/html/editor.MetaTags._Graba.php) (58) | **4** |
+| <sub>**Paises** | [🔗](var/www/html/editor.ListaPaises.php) (45) | [🔗](var/www/html/editor.Paises.php) (179) | [🔗](var/www/html/editor.Paises._Graba.php) (86) | [🔗](var/www/html/editor.Paises._Eliminar.php) (14) | [🔗](var/www/html/editor.Paises._Edita.php) (60)<br>[🔗](var/www/html/editor.Paises._ActualizaOrden.php) (21) | **6** |
+| <sub>**Ciudades** | [🔗](var/www/html/editor.ListaCiudades.php) (35) | - | [🔗](var/www/html/editor.Ciudades._Graba.php) (30) | [🔗](var/www/html/editor.Ciudades._Eliminar.php) (14) | - | **3** |
+| <sub>**CiudadPais** | - | [🔗](var/www/html/editor.CiudadPais.php) (64) | [🔗](var/www/html/editor.CiudadPais._Graba.php) (58) | - | - | **2** |
+| <sub>**Servicios** | [🔗](var/www/html/editor.ListaServicios.php) (35) | - | [🔗](var/www/html/editor.Servicios._Graba.php) (30) | [🔗](var/www/html/editor.Servicios._Eliminar.php) (14) | - | **3** |
+| <sub>**ServicioPais** | - | [🔗](var/www/html/editor.ServicioPais.php) (64) | [🔗](var/www/html/editor.ServicioPais._Graba.php) (59) | - | - | **2** |
+| <sub>**ServicioCiudadPais** | [🔗](var/www/html/editor.ListaServicioCiudadesPais.php) (69) | [🔗](var/www/html/editor.ServicioCiudadPais.php) (73) | [🔗](var/www/html/editor.ServicioCiudadPais._Graba.php) (67) | - | - | **3** |
+| <sub>**Idioma.Pais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais.php) (192) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais._Graba.php) (62) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais._Eliminar.php) (15) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais._Edita.php) (37) | **4** |
+| <sub>**Idioma.CiudadPais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.CiudadPais.php) (76) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.CiudadPais._Graba.php) (66) | - | - | **2** |
+| <sub>**Idioma.ServicioPais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioPais.php) (76) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioPais._Graba.php) (62) | - | - | **2** |
+| <sub>**Idioma.ServicioCiudadPais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioCiudadPais.php) (81) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioCiudadPais._Graba.php) (72) | - | - | **2** |
+| <sub>**ListaCiudades** | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Lista.Ciudades.php) (42) | - | - | - | - | **1** |
+| <sub>**ListaIdiomaServicioCiudadesPais** | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.ListaIdiomaServicioCiudadesPais.php) (69) | - | - | - | - | **1** |
+| <sub>**MapaIdiomas** | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Mapa.Idiomas.php) (81) | - | - | - | - | **1** |
+| <sub>**Idioma.MetaTags** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.MetaTags.php) (59) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.MetaTags._Graba.php) (52) | - | - | **2** |
+| <sub>**Prueba** | - | [🔗](var/www/html/editor.Prueba.php) (48) | - | - | - | **1** |
 | **TOTAL** | **9** | **11** | **12** | **5** | **3** | **40** |
 
 **Leyenda:**
