@@ -30,7 +30,7 @@ Interfaz de administración con 10 secciones editables en un solo archivo, naveg
 
 **Barra de herramientas con navegación por pestañas**
 
-- Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:64-81`
+- [Ubicación](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm): `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:64-81`
 - Código JavaScript para alternar pestañas sin recargar:
 
   ```javascript
@@ -43,7 +43,7 @@ Interfaz de administración con 10 secciones editables en un solo archivo, naveg
 
 **Inicialización automática de editores FCK**
 
-- Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:10-23`
+- [Ubicación](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm): `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:10-23`
 - Sistema que reemplaza todas las textareas automáticamente:
 
   ```javascript
@@ -58,7 +58,7 @@ Interfaz de administración con 10 secciones editables en un solo archivo, naveg
 
 **Carga asíncrona de subsecciones con iframes**
 
-- Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:276-284`
+- [Ubicación](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm): `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:276-284`
 - Meta tags cargados en iframe para no recargar página:
 
   ```html
@@ -67,7 +67,7 @@ Interfaz de administración con 10 secciones editables en un solo archivo, naveg
 
 **10 secciones editables en un solo formulario**
 
-- Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:84-310`
+- [Ubicación](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm): `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:84-310`
 - Secciones: General, Ciudades, Servicios, Ed.Encabezado, Ed.Superior, Ed.subMarquesina, Ed.Dirección, Ed.Contenido, Ed.HTML Libre, Meta Tags
 
 ---
@@ -87,7 +87,7 @@ Matriz visual bidimensional que muestra el estado de traducción para todas las 
 
 **Matriz visual con estados de traducción**
 
-- Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Mapa.Idiomas.php:15-36`
+- [Ubicación](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Mapa.Idiomas.php): `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Mapa.Idiomas.php:15-36`
 - Construcción dinámica de la matriz:
 
   ```php
@@ -105,7 +105,7 @@ Matriz visual bidimensional que muestra el estado de traducción para todas las 
 
 **Detección visual de completitud de traducción**
 
-- Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Mapa.Idiomas.php:50-76`
+- [Ubicación](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Mapa.Idiomas.php): `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Mapa.Idiomas.php:50-76`
 - Lógica de color de celda según estado:
 
   ```php
@@ -125,7 +125,7 @@ Matriz visual bidimensional que muestra el estado de traducción para todas las 
 
 **Enlace directo para ver el sitio**
 
-- Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Mapa.Idiomas.php:59-75`
+- [Ubicación](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Mapa.Idiomas.php): `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Mapa.Idiomas.php:59-75`
 - Botón para previsualizar cada versión del sitio:
 
   ```php
@@ -156,7 +156,7 @@ Arquitectura de base de datos con separación clara entre maestros (`m*`) y tabl
 
 **Definición de tablas maestras**
 
-- Ubicación: `var/www/html/!-documentos.desarrollo/_modelo.datos.sql:20-106`
+- [Ubicación](var/www/html/!-documentos.desarrollo/_modelo.datos.sql): `var/www/html/!-documentos.desarrollo/_modelo.datos.sql:20-106`
 - Tablas maestras normalizadas:
 
   ```sql
@@ -192,7 +192,7 @@ Arquitectura de base de datos con separación clara entre maestros (`m*`) y tabl
 
 **Tablas de traducción con claves compuestas**
 
-- Ubicación: `var/www/html/!-documentos.desarrollo/_modelo.datos.sql:134-188`
+- [Ubicación](var/www/html/!-documentos.desarrollo/_modelo.datos.sql): `var/www/html/!-documentos.desarrollo/_modelo.datos.sql:134-188`
 - Relaciones bien definidas:
 
   ```sql
@@ -224,7 +224,7 @@ Arquitectura de base de datos con separación clara entre maestros (`m*`) y tabl
 
 **Claves primarias compuestas para integridad**
 
-- Ubicación: `var/www/html/!-documentos.desarrollo/_modelo.datos.sql:148,187`
+- [Ubicación](var/www/html/!-documentos.desarrollo/_modelo.datos.sql): `var/www/html/!-documentos.desarrollo/_modelo.datos.sql:148,187`
 - Prevención de duplicados a nivel de base de datos:
 
   ```sql
@@ -249,7 +249,7 @@ Patrón CRUD repetible en más de 40 archivos del sistema, con consistencia en n
 
 **Nomenclatura consistente de archivos CRUD**
 
-- Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/`
+- [Ubicación](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/): `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/`
 - Patrones de nombres:
   - `editor.Idioma.Pais.php` - Lista/Edita
   - `editor.Idioma.Pais._Graba.php` - Crea/Actualiza
@@ -258,7 +258,7 @@ Patrón CRUD repetible en más de 40 archivos del sistema, con consistencia en n
 
 **Patrón de validación de errores consistente**
 
-- Ubicación: `var/www/html/actualizador.Metas.php:35,39,46,50,66,96,126`
+- [Ubicación](var/www/html/actualizador.Metas.php): `var/www/html/actualizador.Metas.php:35,39,46,50,66,96,126`
 - Repetido en 10+ lugares:
 
   ```php
@@ -270,7 +270,7 @@ Patrón CRUD repetible en más de 40 archivos del sistema, con consistencia en n
 
 **Patrón TemplatePower con bloques**
 
-- Ubicación: `var/www/html/index.php:351-358` y múltiples archivos
+- [Ubicación](var/www/html/index.php): `var/www/html/index.php:351-358` y múltiples archivos
 
   ```php
   $t->newBlock("banderas");
@@ -283,7 +283,7 @@ Patrón CRUD repetible en más de 40 archivos del sistema, con consistencia en n
 
 **Patrón de preparación de plantillas**
 
-- Ubicación: `var/www/html/editor.FrontPage.php:29-31`
+- [Ubicación](var/www/html/editor.FrontPage.php): `var/www/html/editor.FrontPage.php:29-31`
 - Repetido en todos los editores:
 
   ```php
@@ -310,7 +310,7 @@ Arquitectura de prefijos configurables por tipo de contenido (ciudades, cursos, 
 
 **Prefijos configurables por tipo de contenido**
 
-- Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:100-132`
+- [Ubicación](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm): `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:100-132`
 - Interfaz de edición de prefijos:
 
   ```html
@@ -334,7 +334,7 @@ Arquitectura de prefijos configurables por tipo de contenido (ciudades, cursos, 
 
 **Uso dinámico de prefijos en el router**
 
-- Ubicación: `var/www/html/index.php:389-401`
+- [Ubicación](var/www/html/index.php): `var/www/html/index.php:389-401`
 - Selección de prefijo según tipo de servicio:
 
   ```php
@@ -355,7 +355,7 @@ Arquitectura de prefijos configurables por tipo de contenido (ciudades, cursos, 
 
 **6 niveles de HTML personalizable por país**
 
-- Ubicación: `var/www/html/!-documentos.desarrollo/_modelo.datos.sql:56-71`
+- [Ubicación](var/www/html/!-documentos.desarrollo/_modelo.datos.sql): `var/www/html/!-documentos.desarrollo/_modelo.datos.sql:56-71`
 
   ```sql
   CREATE TABLE `mpais` (
@@ -371,7 +371,7 @@ Arquitectura de prefijos configurables por tipo de contenido (ciudades, cursos, 
 
 **Asignación de prefijos en plantilla**
 
-- Ubicación: `var/www/html/index.php:403-409`
+- [Ubicación](var/www/html/index.php): `var/www/html/index.php:403-409`
 
   ```php
   $t->newBlock("ciudades");
@@ -400,7 +400,7 @@ Script de 148 líneas que genera automáticamente meta tags para un idioma compl
 
 **Script de automatización de meta tags**
 
-- Ubicación: `var/www/html/actualizador.Metas.php`
+- [Ubicación](var/www/html/actualizador.Metas.php): `var/www/html/actualizador.Metas.php`
 - Estructura del script:
 
   ```php
@@ -442,7 +442,7 @@ Script de 148 líneas que genera automáticamente meta tags para un idioma compl
 
 **Coordenación de múltiples tablas**
 
-- Ubicación: `var/www/html/actualizador.Metas.php:34-53`
+- [Ubicación](var/www/html/actualizador.Metas.php): `var/www/html/actualizador.Metas.php:34-53`
 - Flujo de transacción:
   1. Actualizar tabla de contenido (`tciudadpais`)
   2. Eliminar meta tags existentes
@@ -453,7 +453,7 @@ Script de 148 líneas que genera automáticamente meta tags para un idioma compl
 
 **Aplicación para 3 tipos de página por ciudad**
 
-- Ubicación: `var/www/html/actualizador.Metas.php:56-143`
+- [Ubicación](var/www/html/actualizador.Metas.php): `var/www/html/actualizador.Metas.php:56-143`
 - Procesa para cada ciudad:
   - Página de descripción de ciudad (líneas 26-53)
   - Página de precios de cursos (líneas 56-83)
@@ -477,7 +477,7 @@ Variable `$modoDepuracion` que activa log detallado del flujo de ejecución en i
 
 **Activación de modo depuración**
 
-- Ubicación: `var/www/html/index.php:3`
+- [Ubicación](var/www/html/index.php): `var/www/html/index.php:3`
 - Variable de control:
 
   ```php
@@ -486,7 +486,7 @@ Variable `$modoDepuracion` que activa log detallado del flujo de ejecución en i
 
 **Log del tipo de página solicitada**
 
-- Ubicación: `var/www/html/index.php:18-29`
+- [Ubicación](var/www/html/index.php): `var/www/html/index.php:18-29`
 
   ```php
   if ($modoDepuracion==1) {
@@ -505,7 +505,7 @@ Variable `$modoDepuracion` que activa log detallado del flujo de ejecución en i
 
 **Trazabilidad del ruteo**
 
-- Ubicación: `var/www/html/index.php:36-126`
+- [Ubicación](var/www/html/index.php): `var/www/html/index.php:36-126`
 - Log de deducción de tipo de recurso:
 
   ```php
@@ -538,7 +538,7 @@ Variable `$modoDepuracion` que activa log detallado del flujo de ejecución en i
 
 **Log de construcción de página**
 
-- Ubicación: `var/www/html/index.php:140`
+- [Ubicación](var/www/html/index.php): `var/www/html/index.php:140`
 
   ```php
   if ($modoDepuracion==1) {
@@ -563,7 +563,7 @@ Interfaz de usuario con iconos visuales de estado, tachado para elementos no vis
 
 **Iconos visuales de estado**
 
-- Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:81-85`
+- [Ubicación](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm): `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:81-85`
 - Indicadores de publicación:
 
   ```php
@@ -577,7 +577,7 @@ Interfaz de usuario con iconos visuales de estado, tachado para elementos no vis
 
 **Tachado para elementos no visibles**
 
-- Ubicación: `var/www/html/editor.ListaPaises.php:27`
+- [Ubicación](var/www/html/editor.ListaPaises.php): `var/www/html/editor.ListaPaises.php:27`
 - Indicador visual de estado:
 
   ```php
@@ -588,7 +588,7 @@ Interfaz de usuario con iconos visuales de estado, tachado para elementos no vis
 
 **Negrita para elementos principales**
 
-- Ubicación: `var/www/html/editor.ListaPaises.php:28`
+- [Ubicación](var/www/html/editor.ListaPaises.php): `var/www/html/editor.ListaPaises.php:28`
 - Destacar sitio principal:
 
   ```php
@@ -599,7 +599,7 @@ Interfaz de usuario con iconos visuales de estado, tachado para elementos no vis
 
 **Contadores de elementos definidos**
 
-- Ubicación: `var/www/html/editor.ListaPaises.php:10-14`
+- [Ubicación](var/www/html/editor.ListaPaises.php): `var/www/html/editor.ListaPaises.php:10-14`
 - Estadísticas en tiempo real:
 
   ```php
@@ -612,7 +612,7 @@ Interfaz de usuario con iconos visuales de estado, tachado para elementos no vis
 
 **Enlaces contextuales directos**
 
-- Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:227`
+- [Ubicación](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm): `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:227`
 - Navegación fluida a subediciones:
 
   ```php
@@ -636,7 +636,7 @@ Sistema de ruteo con mod_rewrite que redirige todas las peticiones a index.php, 
 
 **Configuración de mod_rewrite**
 
-- Ubicación: `var/www/html/.htaccess:2-11`
+- [Ubicación](var/www/html/.htaccess): `var/www/html/.htaccess:2-11`
 - Redirección universal:
 
   ```apache
@@ -654,7 +654,7 @@ Sistema de ruteo con mod_rewrite que redirige todas las peticiones a index.php, 
 
 **Deducción automática del tipo de recurso**
 
-- Ubicación: `var/www/html/index.php:34-127`
+- [Ubicación](var/www/html/index.php): `var/www/html/index.php:34-127`
 - Cascada de verificación:
 
   ```php
@@ -698,7 +698,7 @@ Sistema de ruteo con mod_rewrite que redirige todas las peticiones a index.php, 
 
 **Construcción dinámica de navegación jerárquica**
 
-- Ubicación: `var/www/html/index.php:149-197`
+- [Ubicación](var/www/html/index.php): `var/www/html/index.php:149-197`
 - Breadcrumbs dinámicos:
 
   ```php
@@ -748,7 +748,7 @@ Aunque no implementa MVC formal, el sistema tiene separación de responsabilidad
 
 **Archivo de conexión a base de datos**
 
-- Ubicación: `var/www/html/_rutina.coneccion.php:1-20`
+- [Ubicación](var/www/html/_rutina.coneccion.php): `var/www/html/_rutina.coneccion.php:1-20`
 
   ```php
   <?php
@@ -776,7 +776,7 @@ Aunque no implementa MVC formal, el sistema tiene separación de responsabilidad
 
 **Registro automático de variables**
 
-- Ubicación: `var/www/html/_obtener.variables.php:1-24`
+- [Ubicación](var/www/html/_obtener.variables.php): `var/www/html/_obtener.variables.php:1-24`
 
   ```php
   <?
@@ -804,7 +804,7 @@ Aunque no implementa MVC formal, el sistema tiene separación de responsabilidad
 
 **Archivo de configuración**
 
-- Ubicación: `var/www/html/config.inc.php:1-5`
+- [Ubicación](var/www/html/config.inc.php): `var/www/html/config.inc.php:1-5`
 
   ```php
   <?php
@@ -814,7 +814,7 @@ Aunque no implementa MVC formal, el sistema tiene separación de responsabilidad
 
 **Plantillas HTML separadas**
 
-- Ubicación: `var/www/html/plantilla_tp2.htm:1-111`
+- [Ubicación](var/www/html/plantilla_tp2.htm): `var/www/html/plantilla_tp2.htm:1-111`
 - Plantilla con placeholders de TemplatePower:
 
   ```html
@@ -864,7 +864,7 @@ Integración fluida de FCKEditor con configuración personalizada de toolbar, co
 
 **Configuración personalizada de FCKEditor**
 
-- Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:6,16-18`
+- [Ubicación](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm): `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:6,16-18`
 
   ```javascript
   <script type="text/javascript" src="/FCKeditor/fckeditor.js"></script>
@@ -886,7 +886,7 @@ Integración fluida de FCKEditor con configuración personalizada de toolbar, co
 
 **Correcciones para cross-browser**
 
-- Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:31-40`
+- [Ubicación](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm): `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais_tp.htm:31-40`
 
   ```javascript
   // Corrección para que se muestre en modo editar
@@ -912,7 +912,7 @@ Integración fluida de FCKEditor con configuración personalizada de toolbar, co
 
 **Sanitización de HTML**
 
-- Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais.php:183-189`
+- [Ubicación](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais.php): `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais.php:183-189`
 - Uso de funciones de seguridad:
 
   ```php
@@ -941,7 +941,7 @@ Comentarios en código explicando lógica de negocio, scripts SQL exportables pa
 
 **Comentarios explicativos en código**
 
-- Ubicación: `var/www/html/index.php:13-16,31-50,73-76`
+- [Ubicación](var/www/html/index.php): `var/www/html/index.php:13-16,31-50,73-76`
 
   ```php
   /*Obtener las variables para ambos casos: Agregado y Edición
@@ -959,12 +959,12 @@ Comentarios en código explicando lógica de negocio, scripts SQL exportables pa
 
   // ***************************************************************
   // Si no es ciudad, ver si es Servicio
-  // ***************************************************************
+  // ***************************************************************/
   ```
 
 **Script SQL exportable para despliegue**
 
-- Ubicación: `var/www/html/!-documentos.desarrollo/_modelo.datos.sql:1-195`
+- [Ubicación](var/www/html/!-documentos.desarrollo/_modelo.datos.sql): `var/www/html/!-documentos.desarrollo/_modelo.datos.sql:1-195`
 - Documentación completa de estructura:
 
   ```sql
@@ -994,7 +994,7 @@ Comentarios en código explicando lógica de negocio, scripts SQL exportables pa
 
 **Estructura de directorios semántica**
 
-- Ubicación: Véase `var/www/html/`
+- [Ubicación](var/www/html/): Véase `var/www/html/`
   - `2007-06-03-editor.Sitio2/` - Panel de administración versionado
   - `!-documentos.desarrollo/` - Documentación técnica
   - `curso-espanol-espana/` - Versión en español
