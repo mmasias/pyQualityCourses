@@ -14,8 +14,8 @@ Este proyecto representa un ejemplo auténtico del desarrollo web profesional en
 
 - **Backend:** PHP 4/5 con funciones mysql_* (API mysql_connect, mysql_query, etc.)
 - **Base de datos:** MySQL 5.0.27-community-nt
-- **Motor de plantillas:** TemplatePower (sistema de plantillas PHP)
-- **Editor WYSIWYG:** FCKEditor (precursor de CKEditor)
+- **Motor de plantillas:** [TemplatePower](https://web.archive.org/web/20070623031812/http://templatepower.codocad.com/) (sistema de plantillas PHP)
+- **Editor WYSIWYG:** [FCKEditor](https://web.archive.org/web/20070607154618/http://fckeditor.net/) (precursor de CKEditor)
 - **Servidor web:** Apache con mod_rewrite para URLs amigables
 - **Codificación:** ISO-8859-1 (característica de la época, UTF-8 era incipiente)
 
