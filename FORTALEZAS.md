@@ -245,29 +245,91 @@ Patrón CRUD repetible en más de 40 archivos del sistema, con consistencia en n
 - Consistencia reduce curva de aprendizaje
 - Código autodocumentado por patrones
 
-### Mapeo de archivos CRUD (50 archivos totales)
+### Arquitectura de los Editores
+
+El sistema evolucionó en dos fases, cada una con su propio editor:
+
+**Fase 1: Editor Principal (Sitio Original)**
+- Ubicación: `var/www/html/editor.*.php`
+- Propósito: Gestión de la estructura base del sitio
+- Tablas: `mpais`, `mciudad`, `mservicio` (maestros) + `t*` (tablas transaccionales entidad-entidad)
+- Fecha: Antes de 2007-06-03
+- Características:
+  - Gestión de maestros (países, ciudades, servicios)
+  - Relaciones entre entidades (ciudad-país, servicio-país, servicio-ciudad-país)
+  - Contenido específico por combinación entidad1-entidad2
+  - Enfoque en estructura del sitio
+
+**Fase 2: Editor Multilingüe (Sitio 2 - Refactorizado)**
+- Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.*.php`
+- Propósito: Gestión avanzada multilingüe con matriz de idiomas
+- Tablas: `npm*` (maestros normalizados) + `nptidioma*` (tablas de traducción por idioma)
+- Fecha: 2007-06-03 (según nombre del directorio)
+- Características:
+  - Mapa matricial idioma-país para visualizar estado de traducciones
+  - Gestión por idioma específico (español, inglés, francés, etc.)
+  - Extensión de servicios a ciudades por idioma
+  - Interfaz de 10 pestañas por entidad
+  - Carga asíncrona con iframes
+
+### Precedencia y Evolución
+
+1. **Editor Principal** → Define la estructura base y relaciones entre entidades
+2. **Editor Multilingüe** → Traduce y adapta esa estructura a múltiples idiomas
+
+### Mapeo de archivos CRUD (41 archivos totales)
+
+---
+
+#### Editor 1: Gestión de Estructura Base (Sitio Original)
+*Ubicación: `var/www/html/editor.*.php`*
+
+**Propósito:** Definir y gestionar los maestros del sistema (países, ciudades, servicios) y las relaciones entre entidades.
+
 
 | Entidad | Listar<br><sub>`editor.ListaX.php` | Editar<br><sub>`editor.X.php` | Grabar<br><sub><sub>`editor.X_Graba.php` | Eliminar<br><sub>`editor.X_Eliminar.php` | Actualizar<br><sub>`editor.*.php` | Total |
-|---------|-------|--------|--------|----------|-----------|-------|
-| <sub>**FrontPage** | - | [🔗](var/www/html/editor.FrontPage.php) (45) | [🔗](var/www/html/editor.FrontPage._Graba.php) (37) | - | - | **2** |
-| <sub>**General** | - | [🔗](var/www/html/editor.General.php) (53) | - | - | - | **1** |
-| <sub>**MetaTags** | [🔗](var/www/html/editor.lista.metaTags.php) (35) | [🔗](var/www/html/editor.MetaTags.php) (58) | [🔗](var/www/html/editor.lista.metaTags_graba.php) (37) | - | [🔗](var/www/html/editor.MetaTags._Graba.php) (58) | **4** |
-| <sub>**Paises** | [🔗](var/www/html/editor.ListaPaises.php) (45) | [🔗](var/www/html/editor.Paises.php) (179) | [🔗](var/www/html/editor.Paises._Graba.php) (86) | [🔗](var/www/html/editor.Paises._Eliminar.php) (14) | [🔗](var/www/html/editor.Paises._Edita.php) (60)<br>[🔗](var/www/html/editor.Paises._ActualizaOrden.php) (21) | **6** |
-| <sub>**Ciudades** | [🔗](var/www/html/editor.ListaCiudades.php) (35) | - | [🔗](var/www/html/editor.Ciudades._Graba.php) (30) | [🔗](var/www/html/editor.Ciudades._Eliminar.php) (14) | - | **3** |
-| <sub>**CiudadPais** | - | [🔗](var/www/html/editor.CiudadPais.php) (64) | [🔗](var/www/html/editor.CiudadPais._Graba.php) (58) | - | - | **2** |
-| <sub>**Servicios** | [🔗](var/www/html/editor.ListaServicios.php) (35) | - | [🔗](var/www/html/editor.Servicios._Graba.php) (30) | [🔗](var/www/html/editor.Servicios._Eliminar.php) (14) | - | **3** |
-| <sub>**ServicioPais** | - | [🔗](var/www/html/editor.ServicioPais.php) (64) | [🔗](var/www/html/editor.ServicioPais._Graba.php) (59) | - | - | **2** |
-| <sub>**ServicioCiudadPais** | [🔗](var/www/html/editor.ListaServicioCiudadesPais.php) (69) | [🔗](var/www/html/editor.ServicioCiudadPais.php) (73) | [🔗](var/www/html/editor.ServicioCiudadPais._Graba.php) (67) | - | - | **3** |
-| <sub>**Idioma.Pais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais.php) (192) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais._Graba.php) (62) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais._Eliminar.php) (15) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais._Edita.php) (37) | **4** |
-| <sub>**Idioma.CiudadPais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.CiudadPais.php) (76) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.CiudadPais._Graba.php) (66) | - | - | **2** |
-| <sub>**Idioma.Servicio<br>Pais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioPais.php) (76) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioPais._Graba.php) (62) | - | - | **2** |
-| <sub>**Idioma.Servicio<br>CiudadPais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioCiudadPais.php) (81) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioCiudadPais._Graba.php) (72) | - | - | **2** |
-| <sub>**ListaCiudades** | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Lista.Ciudades.php) (42) | - | - | - | - | **1** |
-| <sub>**ListaIdioma<br>ServicioCiudadesPais** | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.ListaIdiomaServicioCiudadesPais.php) (69) | - | - | - | - | **1** |
-| <sub>**MapaIdiomas** | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Mapa.Idiomas.php) (81) | - | - | - | - | **1** |
-| <sub>**Idioma.MetaTags** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.MetaTags.php) (59) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.MetaTags._Graba.php) (52) | - | - | **2** |
-| <sub>**Prueba** | - | [🔗](var/www/html/editor.Prueba.php) (48) | - | - | - | **1** |
-| **TOTAL** | **9** | **11** | **12** | **5** | **3** | **40** |
+|-|:-:|:-:|:-:|:-:|:-:|:-:|
+|<sub>**FrontPage** | - | [🔗](var/www/html/editor.FrontPage.php) (45) | [🔗](var/www/html/editor.FrontPage._Graba.php) (37) | - | - | **2** |
+|<sub>**General** | - | [🔗](var/www/html/editor.General.php) (53) | - | - | - | **1** |
+|<sub>**MetaTags** | [🔗](var/www/html/editor.lista.metaTags.php) (35) | [🔗](var/www/html/editor.MetaTags.php) (58) | [🔗](var/www/html/editor.lista.metaTags_graba.php) (37) | - | [🔗](var/www/html/editor.MetaTags._Graba.php) (58) | **4** |
+|<sub>**Paises** | [🔗](var/www/html/editor.ListaPaises.php) (45) | [🔗](var/www/html/editor.Paises.php) (179) | [🔗](var/www/html/editor.Paises._Graba.php) (86) | [🔗](var/www/html/editor.Paises._Eliminar.php) (14) | [🔗](var/www/html/editor.Paises._Edita.php) (60)<br>[🔗](var/www/html/editor.Paises._ActualizaOrden.php) (21) | **6** |
+|<sub>**Ciudades** | [🔗](var/www/html/editor.ListaCiudades.php) (35) | - | [🔗](var/www/html/editor.Ciudades._Graba.php) (30) | [🔗](var/www/html/editor.Ciudades._Eliminar.php) (14) | - | **3** |
+|<sub>**CiudadPais** | - | [🔗](var/www/html/editor.CiudadPais.php) (64) | [🔗](var/www/html/editor.CiudadPais._Graba.php) (58) | - | - | **2** |
+|<sub>**Servicios** | [🔗](var/www/html/editor.ListaServicios.php) (35) | - | [🔗](var/www/html/editor.Servicios._Graba.php) (30) | [🔗](var/www/html/editor.Servicios._Eliminar.php) (14) | - | **3** |
+|<sub>**ServicioPais** | - | [🔗](var/www/html/editor.ServicioPais.php) (64) | [🔗](var/www/html/editor.ServicioPais._Graba.php) (59) | - | - | **2** |
+|<sub>**ServicioCiudadPais** | [🔗](var/www/html/editor.ListaServicioCiudadesPais.php) (69) | [🔗](var/www/html/editor.ServicioCiudadPais.php) (73) | [🔗](var/www/html/editor.ServicioCiudadPais._Graba.php) (67) | - | - | **3** |
+|<sub>**Idioma.Servicio<br>Pais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioPais.php) (76) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioPais._Graba.php) (62) | - | - | **2** |
+|<sub>**Prueba** | - | [🔗](var/www/html/editor.Prueba.php) (48) | - | - | - | **1** |
+| **SUBTOTAL EDITOR 1** | **6** | **6** | **6** | **4** | **3** | **25** |
+
+---
+
+#### Editor 2: Gestión Multilingüe (Sitio 2 - Refactorizado)
+*Ubicación: `var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.*.php`*
+
+**Propósito:** Traducir y adaptar la estructura base definida en el Editor 1 a múltiples idiomas mediante una interfaz matricial.
+
+
+| Entidad | Listar<br><sub>`editor.ListaX.php` | Editar<br><sub>`editor.X.php` | Grabar<br><sub><sub>`editor.X_Graba.php` | Eliminar<br><sub>`editor.X_Eliminar.php` | Actualizar<br><sub>`editor.*.php` | Total |
+|-|:-:|:-:|:-:|:-:|:-:|:-:|
+|<sub>**Idioma.Servicio<br>CiudadPais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioCiudadPais.php) (81) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.ServicioCiudadPais._Graba.php) (72) | - | - | **2** |
+|<sub>**ListaIdioma<br>ServicioCiudadesPais** | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.ListaIdiomaServicioCiudadesPais.php) (69) | - | - | - | - | **1** |
+|<sub>**ListaCiudades** | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Lista.Ciudades.php) (42) | - | - | - | - | **1** |
+|<sub>**Idioma.Pais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais.php) (192) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais._Graba.php) (62) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais._Eliminar.php) (15) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.Pais._Edita.php) (37) | **4** |
+|<sub>**Idioma.CiudadPais** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.CiudadPais.php) (76) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.CiudadPais._Graba.php) (66) | - | - | **2** |
+|<sub>**Idioma.MetaTags** | - | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.MetaTags.php) (59) | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Idioma.MetaTags._Graba.php) (52) | - | - | **2** |
+|<sub>**MapaIdiomas** | [🔗](var/www/html/2007-06-03-editor.Sitio2/editor.Sitio2/editor.Mapa.Idiomas.php) (81) | - | - | - | - | **1** |
+| **SUBTOTAL EDITOR 2** | **3** | **5** | **6** | **1** | **1** | **16** |
+
+---
+
+### Resumen Global
+
+| Editor | Archivos | Lista | Editar | Grabar | Eliminar | Actualizar |
+|--------|----------|-------|--------|--------|----------|-----------|
+| **Editor 1 (Estructura Base)** | 25 | 6 | 6 | 6 | 4 | 3 |
+| **Editor 2 (Multilingüe)** | 16 | 3 | 5 | 6 | 1 | 1 |
+| **TOTAL** | **41** | **9** | **11** | **12** | **5** | **4** |
 
 **Leyenda:**
 - Números entre paréntesis = líneas de código del archivo
