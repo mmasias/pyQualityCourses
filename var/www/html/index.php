@@ -1,16 +1,16 @@
 <?php
 
 	$modoDepuracion 			= 0; 	// Poner a 1 para ver todos los mensajes
-	$dominioBase 					= "estrategiasmoviles.dyndns.org/quality-courses";
+	$dominioBase 					= getenv('DOMAIN_BASE') ?: "estrategiasmoviles.dyndns.org/quality-courses";
 	$directorioBase = "";
 	
 	include ("index.correccion_subdominio.php");
 	
-	//include($correccionSubdominio."../FCKeditor/fckeditor.php") ;
+	//include "FCKeditor/fckeditor.php") ;
 	require_once($correccionSubdominio.'_rutina.coneccion.php');	
-	require $correccionSubdominio."../class.TemplatePower/class.TemplatePower.inc.php"; 	
+	require "./class.TemplatePower/class.TemplatePower.inc.php"; 	
 
-	/*Obtener las variables para ambos casos: Agregado y Edición
+	/*Obtener las variables para ambos casos: Agregado y Ediciï¿½n
 	----------------------------------------------------------*/
 	include ($correccionSubdominio."_obtener.variables.php");
 /*----------------------------------------------------------*/	
@@ -19,13 +19,13 @@ if ($modoDepuracion==1) {
 echo "
 <p><font face='Verdana' size='3'><b>Proyecto Quality Courses - Fase final</b></font><br />
 <font face='Verdana' size='1'>Fase final del desarrollo del sitio de Quality Courses |
-Editor -><b><a href='editor.FrontPage.php'>aquí</a></b> |
+Editor -><b><a href='editor.FrontPage.php'>aquï¿½</a></b> |
 Punto de partida (temporal) -> <b><a href='spanish-course-barcelona.htm'>spanish-course-barcelona.htm</a></b><br />
-A partir de aqui quiza vea algunos códigos de programación y -finalmente- la página que se mostrará |
-Comentarios y Sugerencias: <b><a href='mailto:manuel@estrategiasmoviles.com'>Manuel Masías</a></b></font>
+A partir de aqui quiza vea algunos cï¿½digos de programaciï¿½n y -finalmente- la pï¿½gina que se mostrarï¿½ |
+Comentarios y Sugerencias: <b><a href='mailto:manuel@estrategiasmoviles.com'>Manuel Masï¿½as</a></b></font>
 <br />
 <font face='Verdana' size='1'><p>
-Se pidió la página [<b>$pagina</b>] desde el directorio <b>[".getcwd()."]</b> | ";
+Se pidiï¿½ la pï¿½gina [<b>$pagina</b>] desde el directorio <b>[".getcwd()."]</b> | ";
 }
 
 //	***************************************************************
@@ -122,7 +122,7 @@ else
 	}
 	
 	if ($modoDepuracion==1) {
-		if ($idServicio!="") {echo "Servicio $idServicio en la ciudad $idCiudad del Pais $idPais | ";} else {echo "No es extensión de servicio | ";}
+		if ($idServicio!="") {echo "Servicio $idServicio en la ciudad $idCiudad del Pais $idPais | ";} else {echo "No es extensiï¿½n de servicio | ";}
 	}
 }
 
@@ -130,21 +130,21 @@ else
 // 	Si no existe
 //	***************************************************************
 if ($idPais=="" && $idCiudad=="" && $idServicio==""){
-		echo "La página solicitada no existe | </p></font>";
+		echo "La pï¿½gina solicitada no existe | </p></font>";
 	}
 		else
 //	***************************************************************
-// 	La página existe!!!
+// 	La pï¿½gina existe!!!
 //	***************************************************************
 	{
-		if ($modoDepuracion==1) {echo "Construyendo la página...</p></font><hr />";}
+		if ($modoDepuracion==1) {echo "Construyendo la pï¿½gina...</p></font><hr />";}
 		
 		$t = new TemplatePower($correccionSubdominio."./plantilla_tp2.htm");
 		$t->prepare(); 
 
 // 	*********************************************************************		
 // 	Navegador superior 
-// 	Descripción del Pais + Descripcion del Servicio/Ciudad + [Descripcion del Servicio]
+// 	Descripciï¿½n del Pais + Descripcion del Servicio/Ciudad + [Descripcion del Servicio]
 // 	*********************************************************************		
 		$miSQL = "SELECT nombreBarraNavegacion, directorio, subdominio, principal
 							FROM mpais 
@@ -175,7 +175,7 @@ if ($idPais=="" && $idCiudad=="" && $idServicio==""){
 		$registros = mysql_query($miSQL);
 		if($registros) {
 			$un_registro = mysql_fetch_array($registros);
-			$miNavegador = $miNavegador." » <a class='navegador' href='".$un_registro["nombreHTML"]."'>".$un_registro["nombreBarraNavegacion"]."</a>";
+			$miNavegador = $miNavegador." ï¿½ <a class='navegador' href='".$un_registro["nombreHTML"]."'>".$un_registro["nombreBarraNavegacion"]."</a>";
 		}
 		
 		$miSQL = "SELECT nombreBarraNavegacion, nombreHTML 
@@ -184,7 +184,7 @@ if ($idPais=="" && $idCiudad=="" && $idServicio==""){
 		$registros = mysql_query($miSQL);
 		if($registros) {
 			$un_registro = mysql_fetch_array($registros);
-			$miNavegador = $miNavegador." » <a class='navegador' href='".$un_registro["nombreHTML"]."'>".$un_registro["nombreBarraNavegacion"]."</a>";
+			$miNavegador = $miNavegador." ï¿½ <a class='navegador' href='".$un_registro["nombreHTML"]."'>".$un_registro["nombreBarraNavegacion"]."</a>";
 		}
 		
 		$miSQL = "SELECT nombreBarraNavegacion, nombreHTML 
@@ -193,7 +193,7 @@ if ($idPais=="" && $idCiudad=="" && $idServicio==""){
 		$registros = mysql_query($miSQL);
 		if($registros) {
 			$un_registro = mysql_fetch_array($registros);
-			$miNavegador = $miNavegador." » <a class='navegador' href='".$un_registro["nombreHTML"]."'>".$un_registro["nombreBarraNavegacion"]."</a>";
+			$miNavegador = $miNavegador." ï¿½ <a class='navegador' href='".$un_registro["nombreHTML"]."'>".$un_registro["nombreBarraNavegacion"]."</a>";
 		}
 // 	*********************************************************************			
 
@@ -249,11 +249,11 @@ if ($idPais=="" && $idCiudad=="" && $idServicio==""){
 	}
 */	
 // *********************************************************************
-// Modificación del 23-02-2007
+// Modificaciï¿½n del 23-02-2007
 // Objetivo: Incluir los valores por defecto 
-//					 cuando no hayan definiciones para esa página
+//					 cuando no hayan definiciones para esa pï¿½gina
 // *********************************************************************
-// Intentar verificar el TITLE de la página definida
+// Intentar verificar el TITLE de la pï¿½gina definida
 /*	$miSQL = "SELECT descripcion FROM tmetas WHERE id = $idMetas";
 	$metatags = mysql_query($miSQL);
 	if ($metatags) {

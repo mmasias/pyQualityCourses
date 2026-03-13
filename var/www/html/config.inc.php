@@ -1,5 +1,5 @@
 <?php
 
-	$dominioBase = 'quality-courses.com';
+	$dominioBase = getenv('DOMAIN_BASE') ?: 'quality-courses.com';
 
 ?>

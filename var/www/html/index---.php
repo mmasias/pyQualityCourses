@@ -6,9 +6,9 @@
 	
 	include ("index.correccion_subdominio.php");
 	
-	//include($correccionSubdominio."../FCKeditor/fckeditor.php") ;
+	//include "FCKeditor/fckeditor.php") ;
 	require_once($correccionSubdominio.'_rutina.coneccion.php');	
-	require $correccionSubdominio."../class.TemplatePower/class.TemplatePower.inc.php"; 	
+	require "./class.TemplatePower/class.TemplatePower.inc.php"; 	
 
 	/*Obtener las variables para ambos casos: Agregado y Edición
 	----------------------------------------------------------*/

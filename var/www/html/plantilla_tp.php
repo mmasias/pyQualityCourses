@@ -1,7 +1,7 @@
 <?php
 require_once('config.inc.php');
 require_once('rutina.coneccion.php');
-require "../class.TemplatePower/class.TemplatePower.inc.php"; 
+require "./class.TemplatePower/class.TemplatePower.inc.php"; 
 
 //Configuración del Template
 

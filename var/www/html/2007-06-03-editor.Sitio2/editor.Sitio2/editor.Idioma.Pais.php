@@ -1,10 +1,10 @@
 <?php
 
 //	include ("_SEC.seguridad.php");
-	include("../FCKeditor/fckeditor.php") ;
-	require_once('../_rutina.coneccion.php');	
-	require_once('../class.TemplatePower/class.TemplatePower.inc.php'); 	
-	include ("../_obtener.variables.php");	
+	include "FCKeditor/fckeditor.php") ;
+	require "_rutina.coneccion.php"');	
+	require "./class.TemplatePower/class.TemplatePower.inc.php'); 	
+	include "_obtener.variables.php"");	
 
 //	Preparación de la plantilla respectiva
 

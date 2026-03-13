@@ -1,7 +1,7 @@
 <?php
 //	include ("_SEC.seguridad.php");
-	require_once('../_rutina.coneccion.php');	
-	include ("../_obtener.variables.php");
+	require "_rutina.coneccion.php"');	
+	include "_obtener.variables.php"");
 
 	$miSQL="UPDATE nptidiomapais 
 					SET nombre = '$txtNombrePais', 

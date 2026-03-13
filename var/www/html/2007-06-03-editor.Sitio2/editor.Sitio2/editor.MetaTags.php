@@ -1,12 +1,12 @@
 <?php
 //	include ("_SEC.seguridad.php");
 	$directorioBase = "";
-	//include("../FCKeditor/fckeditor.php") ;
-	require_once('../_rutina.coneccion.php');	
-	require "../class.TemplatePower/class.TemplatePower.inc.php"; 	
+	//include "FCKeditor/fckeditor.php") ;
+	require "_rutina.coneccion.php"');	
+	require "./class.TemplatePower/class.TemplatePower.inc.php"; 	
 /*Obtener las variables para ambos casos: Agregado y Edición
 	----------------------------------------------------------*/
-	include ("../_obtener.variables.php");
+	include "_obtener.variables.php"");
 /*----------------------------------------------------------*/	
 
 /*

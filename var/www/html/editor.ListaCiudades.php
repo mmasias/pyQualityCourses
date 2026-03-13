@@ -2,7 +2,7 @@
 	$directorioBase = "";
 	include("../FCKEditor/fckeditor.php") ;
 	require_once('rutina.coneccion.php');	
-	require "../class.TemplatePower/class.TemplatePower.inc.php"; 	
+	require "./class.TemplatePower/class.TemplatePower.inc.php"; 	
 
 	$t = new TemplatePower("./editor.ListaCiudades_tp.htm");
 	$t->prepare(); 

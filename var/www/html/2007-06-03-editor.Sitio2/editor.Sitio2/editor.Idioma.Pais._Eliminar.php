@@ -1,6 +1,6 @@
 <?PHP
 	include ("_SEC.seguridad.php");
-	require_once('../_rutina.coneccion.php');	
+	require "_rutina.coneccion.php"');	
 	
 	foreach($_GET as $nombre_campo => $valor){
 		 

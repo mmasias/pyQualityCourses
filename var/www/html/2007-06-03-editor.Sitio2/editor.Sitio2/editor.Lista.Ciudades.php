@@ -1,9 +1,9 @@
 <?php
 
 //	include ("_SEC.seguridad.php");
-	require_once('../_rutina.coneccion.php');	
-	require_once('../class.TemplatePower/class.TemplatePower.inc.php'); 	
-	include ("../_obtener.variables.php");
+	require "_rutina.coneccion.php"');	
+	require "./class.TemplatePower/class.TemplatePower.inc.php'); 	
+	include "_obtener.variables.php"");
 
 	if ($txtNombreCiudad!="") {
 		

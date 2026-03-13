@@ -2,7 +2,7 @@
 	$directorioBase = "";
 	include("../FCKEditor/fckeditor.php") ;
 	require_once('rutina.coneccion.php');	
-	require "../class.TemplatePower/class.TemplatePower.inc.php"; 	
+	require "./class.TemplatePower/class.TemplatePower.inc.php"; 	
 /*Obtener las variables para ambos casos: Agregado y Edición
 	----------------------------------------------------------*/
 	include ("_obtener.variables.php");

@@ -8,6 +8,18 @@ Proyecto CMS desarrollado en 2007 por Estrategias Móviles para QualityCourses, 
 
 Este proyecto representa un ejemplo auténtico del desarrollo web profesional en España a mediados de la década de 2000, antes del auge de los frameworks modernos de PHP (Laravel, Symfony) y antes de la consolidación de las mejores prácticas actuales de desarrollo de software.
 
+## 🚀 Ejecutar el Proyecto
+
+Para ver el proyecto funcionando tal como estaba en 2007, puedes usar el entorno Docker:
+
+```bash
+docker-compose up -d
+```
+
+Luego accede a http://localhost:8080/
+
+**Instrucciones completas en [README.DOCKER.md](README.DOCKER.md)**
+
 ## Arquitectura Técnica
 
 ### Lenguajes y Tecnologías

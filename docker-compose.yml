@@ -1,0 +1,38 @@
+services:
+  web:
+    build: .
+    container_name: pyqualitycourses-web
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_NAME=quality_courses
+      - DB_USER=root
+      - DB_PASS=
+      - DOMAIN_BASE=localhost:8080
+    networks:
+      - pyqualitycourses-net
+
+  db:
+    image: mysql:5.7
+    container_name: pyqualitycourses-db
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./var/www/html/!-documentos.desarrollo/_modelo.datos.sql:/docker-entrypoint-initdb.d/01-schema.sql
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ""
+      MYSQL_DATABASE: quality_courses
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    networks:
+      - pyqualitycourses-net
+
+networks:
+  pyqualitycourses-net:
+    driver: bridge
+
+volumes:
+  mysql-data:

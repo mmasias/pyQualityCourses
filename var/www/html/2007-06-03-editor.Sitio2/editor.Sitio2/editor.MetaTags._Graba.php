@@ -1,10 +1,10 @@
 <?php
 //	include ("_SEC.seguridad.php");
-	require_once('../_rutina.coneccion.php');	
+	require "_rutina.coneccion.php"');	
 
 /*Obtener las variables para ambos casos: Agregado y Edición
 	----------------------------------------------------------*/
-	include ("../_obtener.variables.php");	
+	include "_obtener.variables.php"");	
 /*----------------------------------------------------------*/	
 
 	$miSQL="SELECT idMetas FROM $txtTabla WHERE $txtCriterio";
